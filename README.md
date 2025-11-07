@@ -6,16 +6,38 @@
 
 ---
 
-## 🚀 Our Core Project: Axionax Protocol
+## � Latest Update (November 2025)
+
+🎯 **กำลังเตรียมความพร้อม Public Testnet Launch!**
+
+เราได้สร้างเครื่องมือ **Multi-Repo Issue Manager** เพื่อติดตามและจัดการงานทั้งหมดก่อน launch:
+
+✅ **15+ Issue Templates** ครอบคลุม:
+- 🔒 Security Audits & Penetration Testing
+- ✅ Unit Tests, Integration & E2E Testing
+- 🏗️ Infrastructure, Monitoring & Load Testing
+- ⛓️ Blockchain Setup & Smart Contracts
+- 📚 API, User & Developer Documentation
+- 📢 Community Channels & Launch Planning
+
+🚀 **Ready for Testnet:** กระจาย issues ไปยัง 7 repositories อัตโนมัติ
+
+---
+
+## 🚀 Our Core Projects
 
 โปรเจกต์หลักของเราคือการพัฒนา Axionax ให้เป็นจริง นี่คือ Repository หลักที่คุณสามารถติดตามความคืบหน้าได้:
 
-| Repository | Description |
-|------------|-------------|
-| 🦀 **axionax-core** | Rust protocol core + Python DeAI |
-| 📘 **axionax-sdk-ts** | TypeScript SDK for dApp developers |
-| 📚 **axionax-docs** | Documentation and guides |
-| 🌐 **axionax-web** | Official website (Next.js) |
+| Repository | Description | Status | Link |
+|------------|-------------|--------|------|
+| 🦀 **axionax-core** | Rust protocol core + Python DeAI | ✅ Ready | [View](https://github.com/axionaxprotocol/axionax-core) |
+| 🌍 **axionax-deploy** | Deployment scripts & infrastructure | 🔥 Testing | [View](https://github.com/axionaxprotocol/axionax-deploy) |
+| 🛠️ **axionax-devtools** | Development tools & testing utilities | ✅ Ready | [View](https://github.com/axionaxprotocol/axionax-devtools) |
+| 📚 **axionax-docs** | Documentation and guides | 📝 Active | [View](https://github.com/axionaxprotocol/axionax-docs) |
+| 🛒 **axionax-marketplace** | Compute marketplace dApp | 🚧 Beta | [View](https://github.com/axionaxprotocol/axionax-marketplace) |
+| 📘 **axionax-sdk-ts** | TypeScript SDK for dApp developers | ✅ Ready | [View](https://github.com/axionaxprotocol/axionax-sdk-ts) |
+| � **axionax-web** | Official website & dashboard | ✅ Ready | [View](https://github.com/axionaxprotocol/axionax-web) |
+| ⚙️ **issue-manager** | Multi-repo issue automation tool | 🎉 New! | [View](https://github.com/axionaxprotocol/issue-manager) |
 
 ---
 
@@ -46,4 +68,46 @@
 ## 🔗 Connect With Us (ติดต่อเรา)
 
 * 🌐 **Website:** [axionax.org](https://axionax.org)
-* **Issues:** ติดตามหรือรายงานบั๊กได้ที่ [Issues Page](https://github.com/axionaxprotocol/axionax-core/issues)
+* 📖 **Documentation:** [docs.axionax.org](https://axionaxprotocol.github.io/axionax-docs/)
+* 🐛 **Issues:** [GitHub Issues](https://github.com/axionaxprotocol/axionaxiues/issues)
+* 💬 **Discord:** Coming Q1 2026
+* 📱 **Twitter:** Coming Q1 2026
+
+---
+
+## 🎯 Roadmap to Public Testnet
+
+- [x] Core blockchain implementation
+- [x] Smart contract support
+- [x] TypeScript SDK
+- [x] Development tools
+- [ ] Security audits
+- [ ] Performance optimization
+- [ ] Documentation completion
+- [ ] Community setup
+- [ ] **Public Testnet Launch** 🚀
+
+---
+
+## 🤝 Contributing
+
+เรายินดีต้อนรับการมีส่วนร่วมจากทุกคน! ดูวิธีการได้ที่:
+- [Contributing Guide](https://github.com/axionaxprotocol/axionax-docs/blob/main/CONTRIBUTING.md)
+- [Main Repository](https://github.com/axionaxprotocol/axionaxiues)
+
+---
+
+## 📜 License
+
+ส่วนประกอบต่างๆ ใช้ License แตกต่างกัน:
+- **axionax-core** - AGPLv3
+- **axionax-web, axionax-sdk-ts, axionax-marketplace** - MIT
+- **axionax-docs, axionax-deploy, axionax-devtools** - MIT
+
+ดูรายละเอียดใน LICENSE ของแต่ละ repository
+
+---
+
+<p align="center">
+  <sub>Built with ❤️ by the Axionax Protocol Team | Last Updated: November 7, 2025</sub>
+</p>
