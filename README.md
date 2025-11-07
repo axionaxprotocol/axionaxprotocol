@@ -1,4 +1,4 @@
-# 👋 สวัสดีครับ, ผม Axionax Protocol Team!
+# 👋 สวัสดีครับ, ผม axionax Protocol Team!
 
 เราคือทีมผู้อยู่เบื้องหลัง **Axionax Protocol (AXX)** ซึ่งเป็น Layer-1 Blockchain ที่ออกแบบมาเพื่อการประมวลผลแบบกระจายศูนย์ (Decentralized Compute) โดยเฉพาะ
 
@@ -59,8 +59,8 @@
 นี่คือสถิติการทำงานของเราบน GitHub ครับ (ระบบจะอัปเดตอัตโนมัติ)
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=axionaxprotocol&show_icons=true&theme=radical&hide_border=true&include_all_commits=true" alt="Axionax's GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=axionaxprotocol&layout=compact&theme=radical&hide_border=true" alt="Axionax's Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api?username=axionaxprotocol&show_icons=true&theme=radical&hide_border=true&include_all_commits=true" alt="axionax GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=axionaxprotocol&layout=compact&theme=radical&hide_border=true" alt="axionax Top Languages" />
 </p>
 
 ---
@@ -69,7 +69,7 @@
 
 * 🌐 **Website:** [axionax.org](https://axionax.org)
 * 📖 **Documentation:** [docs.axionax.org](https://axionaxprotocol.github.io/axionax-docs/)
-* 🐛 **Issues:** [GitHub Issues](https://github.com/axionaxprotocol/axionaxiues/issues)
+* 🐛 **Issues:** [GitHub Issues](https://github.com/axionaxprotocol/axionax-core/issues)
 * 💬 **Discord:** Coming Q1 2026
 * 📱 **Twitter:** Coming Q1 2026
 
@@ -93,7 +93,7 @@
 
 เรายินดีต้อนรับการมีส่วนร่วมจากทุกคน! ดูวิธีการได้ที่:
 - [Contributing Guide](https://github.com/axionaxprotocol/axionax-docs/blob/main/CONTRIBUTING.md)
-- [Main Repository](https://github.com/axionaxprotocol/axionaxiues)
+- [Main Repository](https://github.com/axionaxprotocol/axionax-core)
 
 ---
 
@@ -109,5 +109,5 @@
 ---
 
 <p align="center">
-  <sub>Built with ❤️ by the Axionax Protocol Team | Last Updated: November 7, 2025</sub>
+  <sub>Built with ❤️ by the axionax Protocol Team | Last Updated: November 7, 2025</sub>
 </p>
