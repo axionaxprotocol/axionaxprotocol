@@ -92,7 +92,7 @@
 ## 🤝 Contributing
 
 เรายินดีต้อนรับการมีส่วนร่วมจากทุกคน! ดูวิธีการได้ที่:
-- [Contributing Guide](https://github.com/axionaxprotocol/axionax-docs/blob/main/CONTRIBUTING.md)
+- [Contributing Guide](https://github.com/axionaxprotocol/axionax-docs/tree/main/CONTRIBUTING.md)
 - [Main Repository](https://github.com/axionaxprotocol/axionax-core)
 
 ---
