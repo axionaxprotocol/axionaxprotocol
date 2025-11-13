@@ -9,7 +9,7 @@
 [![License](https://img.shields.io/badge/License-AGPLv3%2FMIT-orange?style=flat-square)](#-license)
 [![Chain ID](https://img.shields.io/badge/Chain%20ID-86137%20(Testnet)-purple?style=flat-square)](#)
 
-**45,000+ TPS** • **<0.5s Finality** • **$0.0001 Avg Fee** • **PoPC Consensus**
+**45,000+ TPS** • **<0.5s Finality** • **$0.0001 Avg Fee** • **PoPC (Proof of Probabilistic Checking)**
 
 </div>
 
@@ -23,7 +23,7 @@
 
 สร้าง Layer-1 ที่มีประสิทธิภาพสูงสุด โดยรวมศูนย์:
 - ⚡ **Execution Layer** - ประมวลผล transaction และ smart contract
-- ✅ **Validation Layer** - PoPC consensus mechanism
+- ✅ **Validation Layer** - PoPC (Proof of Probabilistic Checking) consensus mechanism
 - 📦 **Data Availability** - เก็บข้อมูลอย่างปลอดภัย
 - 🔄 **Settlement Layer** - ยืนยันและจัดเก็บ state สุดท้าย
 
@@ -220,7 +220,7 @@
 ## 🎯 Roadmap to Public Testnet
 
 ### ✅ Phase 1: Foundation (Completed)
-- [x] Core blockchain implementation (Rust + PoPC consensus)
+- [x] Core blockchain implementation (Rust + PoPC: Proof of Probabilistic Checking)
 - [x] Smart contract support (WASM runtime)
 - [x] TypeScript SDK for dApp developers
 - [x] Development tools & testing framework (42 tests)
