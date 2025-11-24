@@ -2,63 +2,140 @@
 
 # 🌌 axionax Protocol
 
-### High-Performance Layer-1 Blockchain for Decentralized Computing & AI Workloads
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=6366F1&center=true&vCenter=true&width=800&lines=High-Performance+Layer-1+Blockchain;Decentralized+Computing+%26+AI+Workloads;45%2C000%2B+TPS+%E2%80%A2+%3C0.5s+Finality" alt="Typing SVG" />
 
-[![Website](https://img.shields.io/badge/Website-axionax.org-blue?style=flat-square)](https://axionax.org)
-[![Docs](https://img.shields.io/badge/Docs-docs.axionax.org-green?style=flat-square)](https://axionaxprotocol.github.io/axionax-docs/)
-[![License](https://img.shields.io/badge/License-AGPLv3%2FMIT-orange?style=flat-square)](#-license)
-[![Chain ID](https://img.shields.io/badge/Chain%20ID-86137%20(Testnet)-purple?style=flat-square)](#)
+<br>
 
-**45,000+ TPS** • **<0.5s Finality** • **$0.0001 Avg Fee** • **PoPC (Proof of Probabilistic Checking)**
+[![Website](https://img.shields.io/badge/🌐_Website-axionax.org-4F46E5?style=for-the-badge&logo=safari&logoColor=white)](https://axionax.org)
+[![Docs](https://img.shields.io/badge/📚_Docs-Read_Here-10B981?style=for-the-badge&logo=readthedocs&logoColor=white)](https://axionaxprotocol.github.io/axionax-docs/)
+[![License](https://img.shields.io/badge/⚖️_License-AGPLv3/MIT-F59E0B?style=for-the-badge)](#-license)
+[![Chain ID](https://img.shields.io/badge/🔗_Chain_ID-86137-8B5CF6?style=for-the-badge)](#)
+
+<br>
+
+<table>
+<tr>
+<td align="center"><b>⚡ TPS</b><br><sup>45,000+</sup></td>
+<td align="center"><b>⏱️ Finality</b><br><sup>&lt;0.5s</sup></td>
+<td align="center"><b>💰 Avg Fee</b><br><sup>$0.0001</sup></td>
+<td align="center"><b>🔐 Consensus</b><br><sup>PoPC</sup></td>
+</tr>
+</table>
 
 </div>
 
----
+<br>
 
 ## 👋 สวัสดีครับ, เราคือทีม axionax Protocol!
 
-เราคือทีมผู้พัฒนา **axionax Protocol (AXX)** ซึ่งเป็น Layer-1 Blockchain ที่ออกแบบมาสำหรับการประมวลผลแบบกระจายศูนย์ (Decentralized Compute) และ AI Workloads โดยเฉพาะ
+<div align="center">
 
-### 🎯 วิสัยทัศน์
+```diff
++ เราคือทีมผู้พัฒนา axionax Protocol (AXX)
++ Layer-1 Blockchain สำหรับ Decentralized Compute และ AI Workloads
+```
+
+</div>
+
+### 🎯 วิสัยทัศน์ของเรา
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+#### 🏗️ **All-in-One Layer-1**
 
 สร้าง Layer-1 ที่มีประสิทธิภาพสูงสุด โดยรวมศูนย์:
-- ⚡ **Execution Layer** - ประมวลผล transaction และ smart contract
-- ✅ **Validation Layer** - PoPC (Proof of Probabilistic Checking) consensus mechanism
-- 📦 **Data Availability** - เก็บข้อมูลอย่างปลอดภัย
-- 🔄 **Settlement Layer** - ยืนยันและจัดเก็บ state สุดท้าย
+
+</td>
+<td width="50%" valign="top">
+
+#### ⚙️ **Four Core Layers**
+
+<br>
+
+</td>
+</tr>
+<tr>
+<td colspan="2">
+
+| Layer | Function | Status |
+|-------|----------|--------|
+| ⚡ **Execution** | ประมวลผล transaction และ smart contract | ✅ Live |
+| ✅ **Validation** | PoPC consensus mechanism | ✅ Live |
+| 📦 **Data Availability** | เก็บข้อมูลอย่างปลอดภัย | ✅ Live |
+| 🔄 **Settlement** | ยืนยันและจัดเก็บ state สุดท้าย | ✅ Live |
+
+</td>
+</tr>
+</table>
 
 ---
 
-## 🎉 Latest Updates (November 22, 2025)
+## 🎉 Latest Updates
+
+<div align="center">
 
 ### ✨ Major Milestone: Universe Architecture
 
+<sup>📅 November 22-24, 2025</sup>
+
+</div>
+
 เราได้ปรับโครงสร้างทั้งหมดเป็น **Universe Monorepo Architecture** แล้ว! 🚀
 
+<br>
+
 <table>
-  <tr>
-    <td>🏗️ <b>Architecture Redesign</b></td>
-    <td>รวม 7 repositories เดิมเป็น 2 Universe repos ที่จัดการง่ายกว่า มีประสิทธิภาพสูงกว่า</td>
-  </tr>
-  <tr>
-    <td>🌌 <b>Core Universe</b></td>
-    <td>รวมทุกอย่างเกี่ยวกับ blockchain core, deployment และ dev tools ไว้ที่เดียว</td>
-  </tr>
-  <tr>
-    <td>🌐 <b>Web Universe</b></td>
-    <td>รวม web apps, marketplace, docs และ SDK ในรูปแบบ monorepo</td>
-  </tr>
-  <tr>
-    <td>📦 <b>Better DX</b></td>
-    <td>Shared dependencies, unified CI/CD, easy code reuse และ version sync</td>
-  </tr>
-  <tr>
-    <td>🚀 <b>Production Ready</b></td>
-    <td>ทุกอย่างทดสอบแล้ว clone ได้ทันที พร้อมใช้งาน 100%</td>
-  </tr>
+<thead>
+<tr>
+<th width="30%">🎯 Feature</th>
+<th width="70%">📝 Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><b>🏗️ Architecture Redesign</b></td>
+<td>รวม 7 repositories เดิมเป็น 2 Universe repos ที่จัดการง่ายกว่า มีประสิทธิภาพสูงกว่า</td>
+</tr>
+<tr>
+<td><b>🌌 Core Universe</b></td>
+<td>รวมทุกอย่างเกี่ยวกับ blockchain core, deployment และ dev tools ไว้ที่เดียว</td>
+</tr>
+<tr>
+<td><b>🌐 Web Universe</b></td>
+<td>รวม web apps, marketplace, docs และ SDK ในรูปแบบ monorepo</td>
+</tr>
+<tr>
+<td><b>📦 Better DX</b></td>
+<td>Shared dependencies, unified CI/CD, easy code reuse และ version sync</td>
+</tr>
+<tr>
+<td><b>🚀 Production Ready</b></td>
+<td>ทุกอย่างทดสอบแล้ว clone ได้ทันที พร้อมใช้งาน 100%</td>
+</tr>
+</tbody>
 </table>
 
-### ✅ Previous Achievements
+<details>
+<summary><b>✅ Previous Achievements</b> <i>(click to expand)</i></summary>
+<br>
+
+```mermaid
+gantt
+    title Development Timeline
+    dateFormat  YYYY-MM-DD
+    section Foundation
+    Core Implementation     :done, 2025-09-01, 30d
+    Smart Contracts        :done, 2025-10-01, 20d
+    section Testing
+    Test Suite (42 tests)  :done, 2025-10-15, 15d
+    section UI/UX
+    Enhanced UI            :done, 2025-11-01, 10d
+    section Deployment
+    Production VPS         :done, 2025-11-15, 7d
+    Universe Migration     :done, 2025-11-20, 4d
+```
 
 - 🧪 Comprehensive test suite (42 tests)
 - 🎨 Enhanced UI with animations & hover effects
@@ -66,28 +143,60 @@
 - 🚀 Production deployment on VPS
 - 🛠️ DevOps automation tools
 
+</details>
+
 ---
 
 ## 🌌 Our Universe Repositories
 
-ด้วย **Universe Architecture** ใหม่ เราจัดทุกอย่างให้เป็นระเบียบและใช้งานง่ายขึ้นมาก:
+<div align="center">
+
+ด้วย **Universe Architecture** ใหม่ เราจัดทุกอย่างให้เป็นระเบียบและใช้งานง่ายขึ้นมาก
+
+<br>
+
+</div>
 
 ### 🌌 Core Universe - Backend & Infrastructure
 
 <div align="center">
 
-[![axionax-core-universe](https://img.shields.io/badge/🌌_Core_Universe-Production-brightgreen?style=for-the-badge)](https://github.com/axionaxprotocol/axionax-core-universe)
+[![axionax-core-universe](https://img.shields.io/badge/🌌_Core_Universe-Production-10B981?style=for-the-badge&logo=rust&logoColor=white)](https://github.com/axionaxprotocol/axionax-core-universe)
+[![Stars](https://img.shields.io/github/stars/axionaxprotocol/axionax-core-universe?style=for-the-badge&logo=github)](https://github.com/axionaxprotocol/axionax-core-universe/stargazers)
+[![Issues](https://img.shields.io/github/issues/axionaxprotocol/axionax-core-universe?style=for-the-badge&logo=github)](https://github.com/axionaxprotocol/axionax-core-universe/issues)
 
 </div>
 
-**Monorepo สำหรับ Blockchain Core, Operations และ Development Tools**
+> **Monorepo สำหรับ Blockchain Core, Operations และ Development Tools**
 
-\`\`\`
+<table>
+<tr>
+<td>
+
+```bash
 axionax-core-universe/
-├── 🦀 core/          # Blockchain protocol (Rust + Python DeAI)
-├── 🌍 ops/deploy/    # Deployment automation & infrastructure  
-└── 🛠️ tools/devtools/ # Development utilities & testing tools
-\`\`\`
+│
+├── 🦀 core/
+│   ├── consensus/        # PoPC implementation
+│   ├── runtime/          # WASM smart contracts
+│   ├── crypto/           # Cryptographic primitives
+│   └── deai/             # Python DeAI integration
+│
+├── 🌍 ops/deploy/
+│   ├── docker/           # Container configs
+│   ├── nginx/            # Reverse proxy setup
+│   └── monitoring/       # Prometheus + Grafana
+│
+└── 🛠️ tools/devtools/
+    ├── testing/          # 42 comprehensive tests
+    └── scripts/          # Build & deploy utilities
+```
+
+</td>
+</tr>
+</table>
+
+<br>
 
 | Component | Description | Tech Stack | Status |
 |-----------|-------------|------------|--------|
@@ -103,19 +212,46 @@ axionax-core-universe/
 
 <div align="center">
 
-[![axionax-web-universe](https://img.shields.io/badge/🌐_Web_Universe-Live-brightgreen?style=for-the-badge)](https://github.com/axionaxprotocol/axionax-web-universe)
+[![axionax-web-universe](https://img.shields.io/badge/🌐_Web_Universe-Live-3B82F6?style=for-the-badge&logo=react&logoColor=white)](https://github.com/axionaxprotocol/axionax-web-universe)
+[![Stars](https://img.shields.io/github/stars/axionaxprotocol/axionax-web-universe?style=for-the-badge&logo=github)](https://github.com/axionaxprotocol/axionax-web-universe/stargazers)
+[![Issues](https://img.shields.io/github/issues/axionaxprotocol/axionax-web-universe?style=for-the-badge&logo=github)](https://github.com/axionaxprotocol/axionax-web-universe/issues)
 
 </div>
 
-**Monorepo สำหรับ Web Applications, Marketplace, Documentation และ SDK**
+> **Monorepo สำหรับ Web Applications, Marketplace, Documentation และ SDK**
 
-\`\`\`
+<table>
+<tr>
+<td>
+
+```bash
 axionax-web-universe/
-├── 📱 apps/web/         # Official website (Next.js 14)
-├── 🛒 apps/marketplace/ # Compute marketplace dApp
-├── 📚 apps/docs/        # Documentation site (50+ pages)
-└── 📦 packages/sdk/     # TypeScript SDK for developers
-\`\`\`
+│
+├── 📱 apps/
+│   ├── web/              # Official website
+│   │   ├── pages/        # Next.js 14 routes
+│   │   ├── components/   # Reusable UI components
+│   │   └── styles/       # Tailwind CSS config
+│   │
+│   ├── marketplace/      # Compute marketplace dApp
+│   │   ├── src/          # Vite + React source
+│   │   └── contracts/    # Smart contract ABIs
+│   │
+│   └── docs/             # Documentation site
+│       └── content/      # 50+ markdown pages
+│
+└── 📦 packages/
+    └── sdk/              # TypeScript SDK
+        ├── src/          # Core SDK implementation
+        ├── types/        # TypeScript definitions
+        └── examples/     # Usage examples
+```
+
+</td>
+</tr>
+</table>
+
+<br>
 
 | Component | Description | Tech Stack | Status |
 |-----------|-------------|------------|--------|
@@ -126,35 +262,111 @@ axionax-web-universe/
 
 **🔗 [View Web Universe →](https://github.com/axionaxprotocol/axionax-web-universe)**
 
----
+<br>
+
+<div align="center">
 
 ## ✨ Why Universe Architecture?
 
-### 📊 Comparison: 7 Repos → 2 Universe Repos
+### 📊 Transformation: 7 Repositories → 2 Universe Monorepos
 
-| Before (7 Repos) | After (2 Universe Repos) |
-|------------------|--------------------------|
-| ❌ Scattered across 7 repos | ✅ Organized in 2 monorepos |
-| ❌ Duplicate dependencies | ✅ Shared dependencies |
-| ❌ Hard to sync versions | ✅ Unified version control |
-| ❌ Complex CI/CD | ✅ Centralized CI/CD |
-| ❌ Difficult code reuse | ✅ Easy code sharing |
-| ❌ 7 separate clones needed | ✅ Clone once, have everything |
+</div>
 
-### 🎯 Benefits
+<table>
+<thead>
+<tr>
+<th width="50%" align="center">❌ Before (7 Repos)</th>
+<th width="50%" align="center">✅ After (2 Universe Repos)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td valign="top">
 
-- 🚀 **Faster Development** - No need to switch between repos
-- 📦 **Better Dependency Management** - Shared packages, no duplication
-- 🔄 **Easy Code Reuse** - Import from any package in the workspace
-- ⚡ **Simplified CI/CD** - One pipeline for all related projects
-- 🎨 **Consistent Tooling** - Same dev environment everywhere
-- 📈 **Better DX** - Developer Experience improved dramatically
+• Scattered across 7 repos<br>
+• Duplicate dependencies<br>
+• Hard to sync versions<br>
+• Complex CI/CD pipelines<br>
+• Difficult code reuse<br>
+• 7 separate clones needed<br>
+• Inconsistent tooling<br>
+
+</td>
+<td valign="top">
+
+• Organized in 2 monorepos<br>
+• Shared dependencies<br>
+• Unified version control<br>
+• Centralized CI/CD<br>
+• Easy code sharing<br>
+• Clone once, have everything<br>
+• Consistent dev environment<br>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+<br>
+
+### 🎯 Key Benefits
+
+<div align="center">
+
+<table>
+<tr>
+<td align="center" width="33%">
+<h3>🚀</h3>
+<b>Faster Development</b><br>
+<sub>No need to switch between repos</sub>
+</td>
+<td align="center" width="33%">
+<h3>📦</h3>
+<b>Better Dependencies</b><br>
+<sub>Shared packages, no duplication</sub>
+</td>
+<td align="center" width="33%">
+<h3>🔄</h3>
+<b>Easy Code Reuse</b><br>
+<sub>Import from any workspace package</sub>
+</td>
+</tr>
+<tr>
+<td align="center">
+<h3>⚡</h3>
+<b>Simplified CI/CD</b><br>
+<sub>One pipeline for everything</sub>
+</td>
+<td align="center">
+<h3>🎨</h3>
+<b>Consistent Tooling</b><br>
+<sub>Same dev environment everywhere</sub>
+</td>
+<td align="center">
+<h3>📈</h3>
+<b>Better DX</b><br>
+<sub>Dramatically improved experience</sub>
+</td>
+</tr>
+</table>
+
+</div>
+
+<br>
+
+<div align="center">
 
 ---
 
 ## 🛠️ Technology Stack
 
-### Core Technologies
+<sup>Modern, high-performance tech powering axionax Protocol</sup>
+
+---
+
+</div>
+
+### 🦀 Core Technologies
 
 <p align="center">
   <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust"/>
@@ -182,9 +394,19 @@ axionax-web-universe/
   <img src="https://img.shields.io/badge/pnpm-F69220?style=for-the-badge&logo=pnpm&logoColor=white" alt="pnpm"/>
 </p>
 
+<br>
+
+<div align="center">
+
 ---
 
-## 🚀 Quick Start
+## 🚀 Quick Start Guide
+
+<sup>Get up and running in minutes</sup>
+
+---
+
+</div>
 
 ### Clone & Setup
 
@@ -206,22 +428,53 @@ pnpm install
 pnpm dev
 \`\`\`
 
-### Using the SDK
+### 💻 Using the SDK
 
-\`\`\`typescript
+<table>
+<tr>
+<td width="50%">
+
+**Installation**
+```bash
+npm install @axionax/sdk
+# or
+pnpm add @axionax/sdk
+```
+
+</td>
+<td width="50%">
+
+**Quick Example**
+```typescript
 import { AxionaxClient } from '@axionax/sdk';
 
 const client = new AxionaxClient({
   rpcUrl: 'http://localhost:8545',
   chainId: 86137
 });
+```
 
-// Send transaction
+</td>
+</tr>
+<tr>
+<td colspan="2">
+
+**Send Transaction**
+```typescript
+// Send 1 AXX token
 const tx = await client.sendTransaction({
-  to: '0x...',
-  value: '1000000000000000000' // 1 AXX
+  to: '0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb',
+  value: '1000000000000000000' // 1 AXX in wei
 });
-\`\`\`
+
+console.log('Transaction hash:', tx.hash);
+const receipt = await tx.wait();
+console.log('Confirmed in block:', receipt.blockNumber);
+```
+
+</td>
+</tr>
+</table>
 
 ---
 
@@ -266,9 +519,21 @@ const tx = await client.sendTransaction({
 
 ---
 
+<br>
+
+<div align="center">
+
 ## 🎯 Roadmap to Public Testnet
 
-### ✅ Phase 1: Foundation (Completed)
+<sup>Our journey from concept to mainnet launch</sup>
+
+</div>
+
+### ✅ Phase 1: Foundation
+
+<sub>🟢 **Status:** Completed (100%)</sub>
+
+![Progress](https://progress-bar.dev/100?title=Completed&width=600&color=10b981)
 - [x] Core blockchain implementation (Rust + PoPC)
 - [x] Smart contract support (WASM runtime)
 - [x] TypeScript SDK for dApp developers
@@ -277,7 +542,11 @@ const tx = await client.sendTransaction({
 - [x] Comprehensive documentation (900+ lines)
 - [x] **Universe architecture migration** 🎉
 
-### 🔄 Phase 2: Optimization (In Progress - 70% Complete)
+### 🔄 Phase 2: Optimization
+
+<sub>🟡 **Status:** In Progress (70%)</sub>
+
+![Progress](https://progress-bar.dev/70?title=In+Progress&width=600&color=f59e0b)
 - [x] UI/UX enhancements with animations
 - [x] Production deployment automation
 - [x] DevOps tooling & monitoring
@@ -285,14 +554,22 @@ const tx = await client.sendTransaction({
 - [ ] Security audits & penetration testing
 - [ ] Performance optimization & load testing (Target: 45K+ TPS)
 
-### 🚀 Phase 3: Launch Preparation (Q1 2026)
+### 🚀 Phase 3: Launch Preparation
+
+<sub>🔵 **Target:** Q1 2026</sub>
+
+![Progress](https://progress-bar.dev/0?title=Planned&width=600&color=3b82f6)
 - [ ] Community channels setup (Discord, Twitter, Telegram)
 - [ ] Faucet & explorer deployment
 - [ ] Validator onboarding documentation
 - [ ] Marketing & launch campaign
 - [ ] **Public Testnet Launch** 🎉
 
-### 🌟 Phase 4: Mainnet (Q2 2026)
+### 🌟 Phase 4: Mainnet
+
+<sub>🟣 **Target:** Q2 2026</sub>
+
+![Progress](https://progress-bar.dev/0?title=Future&width=600&color=8b5cf6)
 - [ ] Testnet validation & feedback
 - [ ] Mainnet genesis ceremony
 - [ ] Token distribution & staking
@@ -388,7 +665,7 @@ const tx = await client.sendTransaction({
 
 **Built with ❤️ by the axionax Protocol Team**
 
-*Last Updated: November 22, 2025 - Universe Architecture Launch*
+*Last Updated: November 24, 2025 - Enhanced UI & Documentation*
 
 [![GitHub followers](https://img.shields.io/github/followers/axionaxprotocol?style=social)](https://github.com/axionaxprotocol)
 [![GitHub stars](https://img.shields.io/github/stars/axionaxprotocol?style=social)](https://github.com/axionaxprotocol)
