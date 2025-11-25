@@ -2,9 +2,9 @@
 
 # 🌌 axionax Protocol
 
-[![Website](https://img.shields.io/badge/🌐_Website-217.216.109.5-4F46E5?style=for-the-badge&logo=safari&logoColor=white)](http://217.216.109.5)
 [![Documentation](https://img.shields.io/badge/📚_Documentation-axionax--docs-10B981?style=for-the-badge&logo=readthedocs&logoColor=white)](https://axionaxprotocol.github.io/axionax-docs/)
 [![License](https://img.shields.io/badge/⚖️_License-AGPLv3/MIT-F59E0B?style=for-the-badge)](#-license)
+[![Chain ID](https://img.shields.io/badge/🔗_Chain_ID-86137-8B5CF6?style=for-the-badge)](#)
 
 **High-Performance Layer-1 Blockchain for Decentralized Computing & AI Workloads**
 
@@ -280,9 +280,9 @@ See individual repository `LICENSE` files for details.
 
 <div align="center">
 
-[![Website](https://img.shields.io/badge/🌐_Website-217.216.109.5-blue?style=for-the-badge)](http://217.216.109.5)
 [![Documentation](https://img.shields.io/badge/📖_Documentation-GitHub_Pages-green?style=for-the-badge)](https://axionaxprotocol.github.io/axionax-docs/)
 [![GitHub](https://img.shields.io/badge/💻_GitHub-axionaxprotocol-black?style=for-the-badge)](https://github.com/axionaxprotocol)
+[![Core Universe](https://img.shields.io/badge/🌌_Core_Universe-Repository-blue?style=for-the-badge)](https://github.com/axionaxprotocol/axionax-core-universe)
 
 **Community Channels** *(Coming Q1 2026)*
 
