@@ -2,17 +2,26 @@
 
 # 🌌 axionax Protocol
 
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=6366F1&center=true&vCenter=true&width=600&lines=High-Performance+Layer-1+Blockchain;45%2C000%2B+TPS+%E2%80%A2+%3C0.5s+Finality;Decentralized+Computing+%26+AI" alt="Typing SVG" />
+
 [![Documentation](https://img.shields.io/badge/📚_Documentation-axionax--docs-10B981?style=for-the-badge&logo=readthedocs&logoColor=white)](https://axionaxprotocol.github.io/axionax-docs/)
 [![License](https://img.shields.io/badge/⚖️_License-AGPLv3/MIT-F59E0B?style=for-the-badge)](#-license)
 [![Chain ID](https://img.shields.io/badge/🔗_Chain_ID-86137-8B5CF6?style=for-the-badge)](#)
 
 **High-Performance Layer-1 Blockchain for Decentralized Computing & AI Workloads**
 
-<br>
+```diff
++ ⚡ 45,000+ TPS  |  ⏱️ <0.5s Finality  |  💰 $0.0001 Avg Fee  |  🔐 PoPC Consensus
+```
+
+<details>
+<summary><b>📊 Performance Metrics</b></summary>
 
 | ⚡ **TPS** | ⏱️ **Finality** | 💰 **Avg Fee** | 🔐 **Consensus** | 🔗 **Chain ID** |
 |:---:|:---:|:---:|:---:|:---:|
 | 45,000+ | <0.5s | $0.0001 | PoPC | 86137 |
+
+</details>
 
 </div>
 
@@ -20,7 +29,14 @@
 
 ## 🎯 Overview
 
-**axionax Protocol (AXX)** คือ Layer-1 blockchain ที่ออกแบบมาเพื่อรองรับ decentralized computing และ AI workloads โดยรวมทั้ง 4 layers หลักไว้ในที่เดียว:
+> **axionax Protocol (AXX)** คือ Layer-1 blockchain ที่ออกแบบมาเพื่อรองรับ decentralized computing และ AI workloads  
+> รวมทั้ง 4 layers หลักไว้ในที่เดียว ไม่ต้องพึ่งพา external services
+
+<div align="center">
+
+### 🏗️ All-in-One Architecture
+
+</div>
 
 | Layer | Description | Status |
 |-------|-------------|:------:|
@@ -49,7 +65,8 @@
 ### 🌌 Core Universe - Backend & Infrastructure
 
 [![Core Universe](https://img.shields.io/badge/🌌_Core_Universe-Production-10B981?style=for-the-badge&logo=rust)](https://github.com/axionaxprotocol/axionax-core-universe)
-[![Stars](https://img.shields.io/github/stars/axionaxprotocol/axionax-core-universe?style=flat-square)](https://github.com/axionaxprotocol/axionax-core-universe/stargazers)
+[![Stars](https://img.shields.io/github/stars/axionaxprotocol/axionax-core-universe?style=flat-square&logo=github)](https://github.com/axionaxprotocol/axionax-core-universe/stargazers)
+[![Commits](https://img.shields.io/github/commit-activity/m/axionaxprotocol/axionax-core-universe?style=flat-square&logo=git)](https://github.com/axionaxprotocol/axionax-core-universe/commits)
 
 Blockchain core, deployment tools, และ testing framework (42 tests)
 
@@ -66,7 +83,8 @@ axionax-core-universe/
 ### 🌐 Web Universe - Frontend & SDK
 
 [![Web Universe](https://img.shields.io/badge/🌐_Web_Universe-Live-3B82F6?style=for-the-badge&logo=react)](https://github.com/axionaxprotocol/axionax-web-universe)
-[![Stars](https://img.shields.io/github/stars/axionaxprotocol/axionax-web-universe?style=flat-square)](https://github.com/axionaxprotocol/axionax-web-universe/stargazers)
+[![Stars](https://img.shields.io/github/stars/axionaxprotocol/axionax-web-universe?style=flat-square&logo=github)](https://github.com/axionaxprotocol/axionax-web-universe/stargazers)
+[![Commits](https://img.shields.io/github/commit-activity/m/axionaxprotocol/axionax-web-universe?style=flat-square&logo=git)](https://github.com/axionaxprotocol/axionax-web-universe/commits)
 
 Web applications, marketplace, documentation, และ TypeScript SDK
 
@@ -169,7 +187,8 @@ console.log('Transaction hash:', tx.hash);
 </td>
 <td align="center">
 ✅ <b>Complete</b><br>
-<sub>100%</sub>
+<sub>100%</sub><br>
+<img src="https://progress-bar.dev/100/?width=120&color=10b981" />
 </td>
 </tr>
 <tr>
@@ -183,7 +202,8 @@ console.log('Transaction hash:', tx.hash);
 </td>
 <td align="center">
 🟡 <b>In Progress</b><br>
-<sub>70%</sub>
+<sub>70%</sub><br>
+<img src="https://progress-bar.dev/70/?width=120&color=f59e0b" />
 </td>
 </tr>
 <tr>
@@ -219,6 +239,14 @@ console.log('Transaction hash:', tx.hash);
 ---
 
 ## 📊 Statistics
+
+<div align="center">
+
+[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=axionaxprotocol&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6366F1&icon_color=10B981&text_color=FFFFFF)](https://github.com/axionaxprotocol)
+
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=axionaxprotocol&theme=tokyonight&hide_border=true&background=0D1117&ring=6366F1&fire=10B981&currStreakLabel=FFFFFF)](https://github.com/axionaxprotocol)
+
+</div>
 
 <div align="center">
 
@@ -309,5 +337,9 @@ See individual repository `LICENSE` files for details.
 [![GitHub stars](https://img.shields.io/github/stars/axionaxprotocol?style=social)](https://github.com/axionaxprotocol)
 
 **🌌 Welcome to the axionax Universe! 🌐**
+
+<br>
+
+![Snake animation](https://raw.githubusercontent.com/axionaxprotocol/axionaxprotocol/output/github-contribution-grid-snake-dark.svg)
 
 </div>
