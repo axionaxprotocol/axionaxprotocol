@@ -68,7 +68,7 @@
 [![Stars](https://img.shields.io/github/stars/axionaxprotocol/axionax-core-universe?style=flat-square&logo=github)](https://github.com/axionaxprotocol/axionax-core-universe/stargazers)
 [![Commits](https://img.shields.io/github/commit-activity/m/axionaxprotocol/axionax-core-universe?style=flat-square&logo=git)](https://github.com/axionaxprotocol/axionax-core-universe/commits)
 
-Blockchain core, deployment tools, และ testing framework (42 tests)
+Blockchain core, deployment tools, และ testing framework (241 tests)
 
 ```
 axionax-core-universe/
@@ -181,7 +181,7 @@ console.log('Transaction hash:', tx.hash);
 • Core blockchain (Rust + PoPC)<br>
 • Smart contracts (WASM)<br>
 • TypeScript SDK<br>
-• Testing framework (42 tests)<br>
+• Testing framework (241 tests)<br>
 • Documentation (50+ pages)<br>
 • Universe architecture
 </td>
@@ -252,9 +252,9 @@ console.log('Transaction hash:', tx.hash);
 
 | Metric | Value |
 |--------|:-----:|
-| **Total Tests** | 42/42 ✅ |
-| **Documentation Pages** | 50+ |
-| **Total Files** | 1,845+ |
+| **Total Tests** | 241/241 ✅ |
+| **Documentation Pages** | 57 |
+| **Total Files** | 647+ |
 | **Active Repositories** | 2 Universe Repos |
 | **Transaction Throughput** | 45,000+ TPS |
 | **Block Finality** | <0.5 seconds |
