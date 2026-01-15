@@ -331,7 +331,7 @@ See individual repository `LICENSE` files for details.
 
 **Built with ❤️ by the axionax Protocol Team**
 
-*Last Updated: November 25, 2025*
+*Last Updated: January 15, 2026*
 
 [![GitHub followers](https://img.shields.io/github/followers/axionaxprotocol?style=social)](https://github.com/axionaxprotocol)
 [![GitHub stars](https://img.shields.io/github/stars/axionaxprotocol?style=social)](https://github.com/axionaxprotocol)
