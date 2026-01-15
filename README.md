@@ -1,5 +1,8 @@
 <div align="center">
 
+<img src="assets/axx_token.jpg" width="200" alt="AXX Token Logo" />
+<br/>
+
 # 🌌 axionax Protocol
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=6366F1&center=true&vCenter=true&width=600&lines=High-Performance+Layer-1+Blockchain;45%2C000%2B+TPS+%E2%80%A2+%3C0.5s+Finality;Decentralized+Computing+%26+AI" alt="Typing SVG" />
