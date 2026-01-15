@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/axionax_brand.jpg" width="200" alt="axionax Brand Logo" />
+&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="assets/axx_token.jpg" width="200" alt="AXX Token Logo" />
 <br/>
 
