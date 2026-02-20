@@ -60,10 +60,10 @@ Keep phase completion percentages accurate:
 - Phase 4 (Mainnet): Q2 2026
 
 ### Tone & Language
-- Mix of **Thai and English** (primary audience is Thai developers)
+- **English** only (the entire repository now uses English)
 - Professional but friendly (use emojis in tables/sections)
 - Focus on tangible achievements over promises
-- Use "เรา" (we) when referring to the team
+- Use "we" when referring to the team
 
 ## Common Updates
 

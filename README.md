@@ -3,7 +3,6 @@
 <img src="assets/axionax_brand.jpg" width="200" alt="axionax Brand Logo" />
 &nbsp;&nbsp;&nbsp;&nbsp;
 <img src="assets/axx_token.jpg" width="200" alt="AXX Token Logo" />
-<br/>
 
 # 🌌 axionax Protocol
 
@@ -19,111 +18,93 @@
 + ⚡ 45,000+ TPS  |  ⏱️ <0.5s Finality  |  💰 $0.0001 Avg Fee  |  🔐 PoPC Consensus
 ```
 
-<details>
-<summary><b>📊 Performance Metrics</b></summary>
-
-| ⚡ **TPS** | ⏱️ **Finality** | 💰 **Avg Fee** | 🔐 **Consensus** | 🔗 **Chain ID** |
-|:---:|:---:|:---:|:---:|:---:|
-| 45,000+ | <0.5s | $0.0001 | PoPC | 86137 |
-
-</details>
-
 </div>
+
+---
+
+## 📖 Table of Contents
+- [Overview](#-overview)
+- [Key Features](#-key-features)
+- [The axionax Universe](#-the-axionax-universe)
+- [Quick Start](#-quick-start)
+- [Network Information](#-network-information)
+- [Roadmap](#-roadmap)
+- [Contributing](#-contributing)
+- [License](#-license)
 
 ---
 
 ## 🎯 Overview
 
-> **axionax Protocol (AXX)** คือ Layer-1 blockchain ที่ออกแบบมาเพื่อรองรับ decentralized computing และ AI workloads  
-> รวมทั้ง 4 layers หลักไว้ในที่เดียว ไม่ต้องพึ่งพา external services
+**axionax Protocol (AXX)** is a next-generation Layer-1 blockchain meticulously engineered to support high-performance decentralized computing and intensive AI workloads. It integrates the core components of modern blockchain infrastructure into a single, cohesive platform, eliminating the need for external modular services.
 
-<div align="center">
-
-### 🏗️ All-in-One Architecture
-
-</div>
-
-| Layer | Description | Status |
-|-------|-------------|:------:|
-| ⚡ **Execution** | Transaction processing & smart contract execution | ✅ |
-| ✅ **Validation** | PoPC (Proof of Probabilistic Checking) consensus | ✅ |
-| 📦 **Data Availability** | Secure, accessible data storage layer | ✅ |
-| 🔄 **Settlement** | Final state confirmation & persistence | ✅ |
+By combining **Execution, Validation, Data Availability, and Settlement** into an "All-in-One" architecture, axionax delivers unprecedented speed, robust security, and seamless developer experience.
 
 ---
 
-## 🌌 Universe Architecture
+## ✨ Key Features
 
-เราใช้ **Universe Monorepo Architecture** - รวม 7 repositories เดิมเป็น 2 monorepos ที่มีประสิทธิภาพสูงกว่า
+| Feature | Description |
+| :--- | :--- |
+| ⚡ **Extreme Throughput** | Processes **45,000+ TPS** with sub-second (**<0.5s**) finality, suitable for real-time AI and high-frequency trading. |
+| 🔐 **PoPC Consensus** | Innovative **Proof of Probabilistic Checking (PoPC)** ensures decentralized and highly efficient block validation. |
+| 📦 **Built-in Data Availability** | Secure and scalable internal DA layer, removing reliance on external DA networks. |
+| 🧠 **AI & Compute Ready** | Native capabilities designed specifically for decentralized AI training, inference, and complex computational tasks. |
 
-<div align="center">
+---
 
-| Metric | Before | After | Improvement |
-|--------|:------:|:-----:|:-----------:|
-| Setup Time | ~30 mins | ~5 mins | 🚀 6x faster |
-| Dependencies | Duplicated | Shared | 📦 60% less |
-| CI/CD Pipelines | 7 | 2 | ⚡ 3.5x simpler |
-| Code Reuse | Difficult | Native | ✨ Easy |
+## 🌌 The axionax Universe
 
-</div>
+Our ecosystem is structured using a **Universe Monorepo Architecture**, optimized for performance, scalability, and developer experience.
 
-### 🌌 Core Universe - Backend & Infrastructure
+### 1. Core Universe (Backend & Infrastructure)
+The foundation of the axionax Protocol, containing the blockchain node, consensus engine, and deployment orchestration.
 
 [![Core Universe](https://img.shields.io/badge/🌌_Core_Universe-Production-10B981?style=for-the-badge&logo=rust)](https://github.com/axionaxprotocol/axionax-core-universe)
 [![Stars](https://img.shields.io/github/stars/axionaxprotocol/axionax-core-universe?style=flat-square&logo=github)](https://github.com/axionaxprotocol/axionax-core-universe/stargazers)
-[![Commits](https://img.shields.io/github/commit-activity/m/axionaxprotocol/axionax-core-universe?style=flat-square&logo=git)](https://github.com/axionaxprotocol/axionax-core-universe/commits)
 
-Blockchain core, deployment tools, และ testing framework (241 tests)
+- **Tech Stack:** Rust, Python, Docker, Bash
+- **Components:** Blockchain Core, PoPC Consensus, WASM Runtime, DevOps Pipelines, Testing Framework.
+- **🔗 [Explore Core Universe →](https://github.com/axionaxprotocol/axionax-core-universe)**
 
-```
-axionax-core-universe/
-├── core/          # Rust blockchain + PoPC consensus + WASM runtime
-├── ops/deploy/    # Docker, Nginx, monitoring (Prometheus + Grafana)
-└── tools/devtools/# Testing framework & build utilities
-```
-
-**Tech Stack:** Rust, Python, Docker, Bash  
-**🔗 [View Repository →](https://github.com/axionaxprotocol/axionax-core-universe)**
-
-### 🌐 Web Universe - Frontend & SDK
+### 2. Web Universe (Frontend & SDK)
+The user and developer interfaces for the axionax Protocol, including dApps, official documentation, and integration SDKs.
 
 [![Web Universe](https://img.shields.io/badge/🌐_Web_Universe-Live-3B82F6?style=for-the-badge&logo=react)](https://github.com/axionaxprotocol/axionax-web-universe)
 [![Stars](https://img.shields.io/github/stars/axionaxprotocol/axionax-web-universe?style=flat-square&logo=github)](https://github.com/axionaxprotocol/axionax-web-universe/stargazers)
-[![Commits](https://img.shields.io/github/commit-activity/m/axionaxprotocol/axionax-web-universe?style=flat-square&logo=git)](https://github.com/axionaxprotocol/axionax-web-universe/commits)
 
-Web applications, marketplace, documentation, และ TypeScript SDK
-
-```
-axionax-web-universe/
-├── apps/
-│   ├── web/         # Next.js 14 website
-│   ├── marketplace/ # Vite + React marketplace dApp
-│   └── docs/        # 50+ documentation pages
-└── packages/sdk/    # TypeScript SDK for dApp developers
-```
-
-**Tech Stack:** Next.js 14, React, TypeScript, Tailwind CSS, pnpm  
-**🔗 [View Repository →](https://github.com/axionaxprotocol/axionax-web-universe)**
+- **Tech Stack:** Next.js 14, React, TypeScript, Tailwind CSS, pnpm
+- **Components:** Web Portals, Marketplace dApp, TypeScript SDK (`@axionax/sdk`), Protocol Documentation.
+- **🔗 [Explore Web Universe →](https://github.com/axionaxprotocol/axionax-web-universe)**
 
 ---
 
 ## 🚀 Quick Start
 
-### Clone & Build
+### For Node Operators & Core Developers
 
 ```bash
-# Core Universe - Backend
+# Clone the Core Universe repository
 git clone https://github.com/axionaxprotocol/axionax-core-universe.git
 cd axionax-core-universe/core
-cargo build --release
 
-# Web Universe - Frontend
-git clone https://github.com/axionaxprotocol/axionax-web-universe.git
-cd axionax-web-universe
-pnpm install && pnpm dev
+# Build the node (requires Rust toolchain)
+cargo build --release
 ```
 
-### Using the SDK
+### For dApp & Web Developers
+
+```bash
+# Clone the Web Universe repository
+git clone https://github.com/axionaxprotocol/axionax-web-universe.git
+cd axionax-web-universe
+
+# Install dependencies and start the development server
+pnpm install
+pnpm dev
+```
+
+### SDK Integration
 
 ```bash
 npm install @axionax/sdk
@@ -137,7 +118,7 @@ const client = new AxionaxClient({
   chainId: 86137
 });
 
-// Send transaction
+// Send a simple transaction
 const tx = await client.sendTransaction({
   to: '0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb',
   value: '1000000000000000000' // 1 AXX
@@ -148,122 +129,32 @@ console.log('Transaction hash:', tx.hash);
 
 ---
 
-## 🛠️ Technology Stack
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust"/>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
-  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js"/>
-  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React"/>
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
-  <img src="https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white" alt="Nginx"/>
-</p>
-
----
-
 ## 🔗 Network Information
 
 | Network | Chain ID | RPC Endpoint | Status |
-|---------|:--------:|--------------|:------:|
-| **Testnet** | 86137 | Coming Soon | 🟡 Preparing |
-| **Mainnet** | 86150 | Coming Soon | 🔵 Reserved |
-| **Local Dev** | 31337 | localhost:8545 | ✅ Ready |
+| :--- | :---: | :--- | :---: |
+| **Local Dev** | `31337` | `http://localhost:8545` | ✅ Ready |
+| **Testnet** | `86137` | *Coming Soon* | 🟡 Preparing |
+| **Mainnet** | `86150` | *Coming Soon* | 🔵 Reserved |
 
 ---
 
 ## 🗺️ Roadmap
 
-<table>
-<tr>
-<th width="25%">Phase</th>
-<th width="50%">Key Deliverables</th>
-<th width="25%">Status</th>
-</tr>
-<tr>
-<td><b>Phase 1</b><br><sub>Foundation</sub></td>
-<td>
-• Core blockchain (Rust + PoPC)<br>
-• Smart contracts (WASM)<br>
-• TypeScript SDK<br>
-• Testing framework (241 tests)<br>
-• Documentation (50+ pages)<br>
-• Universe architecture
-</td>
-<td align="center">
-✅ <b>Complete</b><br>
-<sub>100%</sub><br>
-<img src="https://progress-bar.dev/100/?width=120&color=10b981" />
-</td>
-</tr>
-<tr>
-<td><b>Phase 2</b><br><sub>Optimization</sub></td>
-<td>
-• UI/UX enhancements<br>
-• Production deployment<br>
-• DevOps automation<br>
-• Security audits<br>
-• Performance testing (45K+ TPS)
-</td>
-<td align="center">
-🟡 <b>In Progress</b><br>
-<sub>70%</sub><br>
-<img src="https://progress-bar.dev/70/?width=120&color=f59e0b" />
-</td>
-</tr>
-<tr>
-<td><b>Phase 3</b><br><sub>Launch Prep</sub></td>
-<td>
-• Community channels setup<br>
-• Faucet & explorer<br>
-• Validator documentation<br>
-• Marketing campaign<br>
-• <b>Public Testnet Launch</b>
-</td>
-<td align="center">
-🔵 <b>Q1 2026</b><br>
-<sub>Planned</sub>
-</td>
-</tr>
-<tr>
-<td><b>Phase 4</b><br><sub>Mainnet</sub></td>
-<td>
-• Testnet validation<br>
-• Genesis ceremony<br>
-• Token distribution<br>
-• Governance<br>
-• <b>Mainnet Launch</b>
-</td>
-<td align="center">
-🟣 <b>Q2 2026</b><br>
-<sub>Target</sub>
-</td>
-</tr>
-</table>
+| Phase | Key Deliverables | Status |
+| :--- | :--- | :---: |
+| **Phase 1: Foundation** | Core blockchain (Rust + PoPC), Smart contracts (WASM), TypeScript SDK, Universe architecture | ✅ **100%** |
+| **Phase 2: Optimization** | UI/UX enhancements, Production deployment, DevOps automation, Security audits, 45K+ TPS testing | 🔄 **70%** |
+| **Phase 3: Launch Prep** | Community channels, Faucet & Explorer, Validator documentation, Public Testnet Launch | 📅 **Q1 2026** |
+| **Phase 4: Mainnet** | Testnet validation, Genesis ceremony, Token distribution, Mainnet Launch | 🎯 **Q2 2026** |
 
 ---
 
-## 📊 Statistics
+## 📊 Project Statistics
 
 <div align="center">
 
 [![GitHub Stats](https://github-readme-stats.vercel.app/api?username=axionaxprotocol&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6366F1&icon_color=10B981&text_color=FFFFFF)](https://github.com/axionaxprotocol)
-
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=axionaxprotocol&theme=tokyonight&hide_border=true&background=0D1117&ring=6366F1&fire=10B981&currStreakLabel=FFFFFF)](https://github.com/axionaxprotocol)
-
-</div>
-
-<div align="center">
-
-| Metric | Value |
-|--------|:-----:|
-| **Total Tests** | 241/241 ✅ |
-| **Documentation Pages** | 57 |
-| **Total Files** | 647+ |
-| **Active Repositories** | 2 Universe Repos |
-| **Transaction Throughput** | 45,000+ TPS |
-| **Block Finality** | <0.5 seconds |
-| **Average Fee** | $0.0001 |
 
 </div>
 
@@ -271,53 +162,37 @@ console.log('Transaction hash:', tx.hash);
 
 ## 🤝 Contributing
 
-เรายินดีรับ contributions จากทุกคน!
+We welcome contributions from everyone! Whether it's reporting bugs, improving documentation, or contributing code, your help is appreciated.
 
-### How to Contribute
+1. Fork the respective repository ([Core](https://github.com/axionaxprotocol/axionax-core-universe) or [Web](https://github.com/axionaxprotocol/axionax-web-universe)).
+2. Create your feature branch (`git checkout -b feature/amazing-feature`).
+3. Commit your changes (`git commit -m 'feat: add amazing feature'`).
+4. Push to the branch (`git push origin feature/amazing-feature`).
+5. Open a Pull Request.
 
-1. Fork repository ที่สนใจ ([Core Universe](https://github.com/axionaxprotocol/axionax-core-universe) / [Web Universe](https://github.com/axionaxprotocol/axionax-web-universe))
-2. Create feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open Pull Request
-
-### Developer Resources
-
-- [Developer Guide](https://axionaxprotocol.github.io/axionax-docs/DEVELOPER_GUIDE.html)
-- [Testing Guide](https://axionaxprotocol.github.io/axionax-docs/TESTING_GUIDE.html)
-- [API Reference](https://axionaxprotocol.github.io/axionax-docs/API_REFERENCE.html)
-
-### We're Looking For
-
-- 🐛 Bug fixes & performance improvements
-- 📚 Documentation enhancements
-- ✅ Increased test coverage
-- 🎨 UI/UX improvements
-- 🔒 Security audits & vulnerability reports
+For detailed guidelines, please refer to our [Developer Guide](https://axionaxprotocol.github.io/axionax-docs/DEVELOPER_GUIDE.html).
 
 ---
 
 ## 📋 License
 
-| Component | License | Description |
-|-----------|:-------:|-------------|
-| **Core Universe / core** | AGPLv3 | Blockchain protocol core |
-| **Core Universe / ops & tools** | MIT | Deployment & dev tools |
-| **Web Universe** | MIT | Web apps, docs & SDK |
+The axionax Protocol utilizes different licenses depending on the component to maximize open-source collaboration while protecting core protocol mechanics:
 
-See individual repository `LICENSE` files for details.
+- **Core Universe (Blockchain Core):** [AGPLv3](https://github.com/axionaxprotocol/axionax-core-universe/blob/main/LICENSE)
+- **Core Universe (Ops & Tools):** [MIT](https://github.com/axionaxprotocol/axionax-core-universe/blob/main/LICENSE-MIT)
+- **Web Universe (Apps, Docs, SDK):** [MIT](https://github.com/axionaxprotocol/axionax-web-universe/blob/main/LICENSE)
 
 ---
 
-## 📞 Connect
+## 📞 Connect & Support
 
 <div align="center">
 
 [![Documentation](https://img.shields.io/badge/📖_Documentation-GitHub_Pages-green?style=for-the-badge)](https://axionaxprotocol.github.io/axionax-docs/)
-[![GitHub](https://img.shields.io/badge/💻_GitHub-axionaxprotocol-black?style=for-the-badge)](https://github.com/axionaxprotocol)
 [![Core Universe](https://img.shields.io/badge/🌌_Core_Universe-Repository-blue?style=for-the-badge)](https://github.com/axionaxprotocol/axionax-core-universe)
+[![Web Universe](https://img.shields.io/badge/🌐_Web_Universe-Repository-blue?style=for-the-badge)](https://github.com/axionaxprotocol/axionax-web-universe)
 
-**Community Channels** *(Coming Q1 2026)*
+**Community Channels** *(Launching Q1 2026)*
 
 [![Discord](https://img.shields.io/badge/Discord-Coming_Soon-7289DA?style=flat-square&logo=discord)](https://github.com/axionaxprotocol)
 [![Twitter](https://img.shields.io/badge/Twitter-Coming_Soon-1DA1F2?style=flat-square&logo=twitter)](https://github.com/axionaxprotocol)
@@ -325,25 +200,12 @@ See individual repository `LICENSE` files for details.
 
 </div>
 
-### Report Issues
-
-- [Core Universe Issues](https://github.com/axionaxprotocol/axionax-core-universe/issues)
-- [Web Universe Issues](https://github.com/axionaxprotocol/axionax-web-universe/issues)
-
----
+<br>
 
 <div align="center">
 
-**Built with ❤️ by the axionax Protocol Team**
-
-*Last Updated: January 15, 2026*
-
-[![GitHub followers](https://img.shields.io/github/followers/axionaxprotocol?style=social)](https://github.com/axionaxprotocol)
-[![GitHub stars](https://img.shields.io/github/stars/axionaxprotocol?style=social)](https://github.com/axionaxprotocol)
-
-**🌌 Welcome to the axionax Universe! 🌐**
-
-<br>
+**Built with ❤️ by the axionax Protocol Team**  
+*Last Updated: February 2026*
 
 ![Snake animation](https://raw.githubusercontent.com/axionaxprotocol/axionaxprotocol/output/github-contribution-grid-snake-dark.svg)
 
