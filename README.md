@@ -8,7 +8,7 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=6366F1&center=true&vCenter=true&width=600&lines=High-Performance+Layer-1+Blockchain;45%2C000%2B+TPS+%E2%80%A2+%3C0.5s+Finality;Decentralized+Computing+%26+AI" alt="Typing SVG" />
 
-[![Documentation](https://img.shields.io/badge/📚_Documentation-axionax--docs-10B981?style=for-the-badge&logo=readthedocs&logoColor=white)](https://axionaxprotocol.github.io/axionax-docs/)
+[![Documentation](https://img.shields.io/badge/📚_Documentation-axionax.org-10B981?style=for-the-badge&logo=readthedocs&logoColor=white)](https://axionax.org)
 [![License](https://img.shields.io/badge/⚖️_License-AGPLv3/MIT-F59E0B?style=for-the-badge)](#-license)
 [![Chain ID](https://img.shields.io/badge/🔗_Chain_ID-86137-8B5CF6?style=for-the-badge)](#)
 
@@ -134,7 +134,7 @@ console.log('Transaction hash:', tx.hash);
 | Network | Chain ID | RPC Endpoint | Status |
 | :--- | :---: | :--- | :---: |
 | **Local Dev** | `31337` | `http://localhost:8545` | ✅ Ready |
-| **Testnet** | `86137` | *Coming Soon* | 🟡 Preparing |
+| **Testnet** | `86137` | See [Core Universe README](https://github.com/axionaxprotocol/axionax-core-universe#current-network-testnet) for live RPC endpoints | 🟡 Pre-Testnet |
 | **Mainnet** | `86150` | *Coming Soon* | 🔵 Reserved |
 
 ---
@@ -170,17 +170,16 @@ We welcome contributions from everyone! Whether it's reporting bugs, improving d
 4. Push to the branch (`git push origin feature/amazing-feature`).
 5. Open a Pull Request.
 
-For detailed guidelines, please refer to our [Developer Guide](https://axionaxprotocol.github.io/axionax-docs/DEVELOPER_GUIDE.html).
+For detailed guidelines, please refer to the [documentation on our main website](https://axionax.org).
 
 ---
 
 ## 📋 License
 
-The axionax Protocol utilizes different licenses depending on the component to maximize open-source collaboration while protecting core protocol mechanics:
+The axionax Protocol uses different licenses per component. See each repository for exact terms:
 
-- **Core Universe (Blockchain Core):** [AGPLv3](https://github.com/axionaxprotocol/axionax-core-universe/blob/main/LICENSE)
-- **Core Universe (Ops & Tools):** [MIT](https://github.com/axionaxprotocol/axionax-core-universe/blob/main/LICENSE-MIT)
-- **Web Universe (Apps, Docs, SDK):** [MIT](https://github.com/axionaxprotocol/axionax-web-universe/blob/main/LICENSE)
+- **Core Universe:** `core/` → AGPLv3; `ops/` and `tools/` → MIT. See [Core Universe → License](https://github.com/axionaxprotocol/axionax-core-universe#license).
+- **Web Universe:** MIT. See [Web Universe LICENSE](https://github.com/axionaxprotocol/axionax-web-universe/blob/main/LICENSE).
 
 ---
 
@@ -188,7 +187,8 @@ The axionax Protocol utilizes different licenses depending on the component to m
 
 <div align="center">
 
-[![Documentation](https://img.shields.io/badge/📖_Documentation-GitHub_Pages-green?style=for-the-badge)](https://axionaxprotocol.github.io/axionax-docs/)
+[![Website](https://img.shields.io/badge/🌐_Website-axionax.org-10B981?style=for-the-badge)](https://axionax.org)
+[![Documentation](https://img.shields.io/badge/📖_Documentation-axionax.org-green?style=for-the-badge)](https://axionax.org)
 [![Core Universe](https://img.shields.io/badge/🌌_Core_Universe-Repository-blue?style=for-the-badge)](https://github.com/axionaxprotocol/axionax-core-universe)
 [![Web Universe](https://img.shields.io/badge/🌐_Web_Universe-Repository-blue?style=for-the-badge)](https://github.com/axionaxprotocol/axionax-web-universe)
 
@@ -205,7 +205,7 @@ The axionax Protocol utilizes different licenses depending on the component to m
 <div align="center">
 
 **Built with ❤️ by the axionax Protocol Team**  
-*Last Updated: February 2026*
+*Last Updated: February 20, 2026*
 
 ![Snake animation](https://raw.githubusercontent.com/axionaxprotocol/axionaxprotocol/output/github-contribution-grid-snake-dark.svg)
 

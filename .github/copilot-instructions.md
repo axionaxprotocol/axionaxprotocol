@@ -33,15 +33,17 @@ When updating content, emphasize this modern monorepo architecture.
 axionax Protocol Organization
 ├── axionaxprotocol/axionaxprotocol (this repo) - Landing page
 ├── axionax-core-universe/
-│   ├── core/          - Rust blockchain + Python DeAI
-│   ├── ops/deploy/    - Docker, Nginx, monitoring
-│   └── tools/devtools/ - Testing framework (42 tests)
+│   ├── core/          - Rust blockchain + Python DeAI (PoPC, staking, RPC)
+│   ├── configs/       - Monolith / Scout TOML configs
+│   ├── scripts/       - join-axionax, update-node, health-check
+│   ├── ops/           - Docker, Nginx, monitoring (e.g. ops/deploy)
+│   └── tools/         - Dev utilities, faucet
 └── axionax-web-universe/
-    ├── apps/web/         - Next.js 14 website
-    ├── apps/marketplace/ - React marketplace dApp
-    ├── apps/docs/        - 50+ documentation pages
-    └── packages/sdk/     - TypeScript SDK
+    ├── apps/          - web (Next.js), marketplace (Vite/React), etc.
+    ├── packages/sdk/  - TypeScript SDK (@axionax/sdk)
+    └── docs/          - Documentation (if present)
 ```
+Verify current layout in each repo's README when updating.
 
 ## Content Guidelines
 
@@ -74,17 +76,17 @@ When referencing new features, link to the specific Universe repo:
 ```
 
 ### Updating Statistics
-Key metrics in the README that may need updates:
-- Total tests count (currently 42)
-- Total files (currently 1,845+)
-- Documentation pages (currently 50+)
-- Phase completion percentages
+When adding or updating metrics in the README, verify against the actual repositories:
+- Test counts: run or check CI in Core (cargo test / pytest) and Web
+- File counts and doc page counts: confirm in each repo
+- Phase completion: keep aligned with roadmap section
+Do not hardcode numbers that can become outdated; link to repos or "see repository" where appropriate.
 
 ### Link Maintenance
-All external links point to:
-- Website: `http://217.216.109.5` (production VPS)
-- Docs: `https://axionaxprotocol.github.io/axionax-docs/`
-- Issues: Link to appropriate Universe repo
+Keep these links current and working:
+- **Website & documentation:** `https://axionax.org` — official site; all documentation is hosted here (axionax-docs repo/URL no longer used).
+- Testnet RPC: See Core Universe README "Current Network (Testnet)" for live endpoints.
+- Issues: Link to the appropriate Universe repo.
 
 ## Don't Do This
 
@@ -103,6 +105,8 @@ If asked to work on actual implementation:
 
 ## Recent Changes
 
+- **Feb 20, 2026**: Documentation now on main website only — all axionax-docs / GitHub Pages docs URLs removed; documentation links point to https://axionax.org
+- **Feb 20, 2026**: Data verification pass — Network table (Testnet link to Core README), License links (Core has no root LICENSE; use README#license), added axionax.org; copilot structure/stats/links aligned with actual repos
+- **Feb 20, 2026**: README overhaul — professional structure, English-only, Table of Contents, refined Quick Start & Roadmap
 - **Nov 22, 2025**: Universe architecture migration completed
 - **Nov 22, 2025**: PoPC definition standardized to "Proof of Probabilistic Checking"
-- Previous: UI enhancements, 42-test suite, production deployment automation
