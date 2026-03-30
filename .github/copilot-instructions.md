@@ -57,9 +57,9 @@ Maintain consistency with these core specs:
 ### Roadmap Phases
 Keep phase completion percentages accurate:
 - Phase 1 (Foundation): ✅ 100% Complete
-- Phase 2 (Optimization): 🔄 70% Complete
-- Phase 3 (Launch Prep): Q1 2026
-- Phase 4 (Mainnet): Q2 2026
+- Phase 2 (Optimization): ✅ 95% Complete
+- Phase 3 (Launch Prep): 🔄 50% (whitepaper, faucet tests, VPS tooling done; testnet active)
+- Phase 4 (Mainnet): 🔄 20% (genesis export, state validation, RPC hardening in progress)
 
 ### Tone & Language
 - **English** only (the entire repository now uses English)
@@ -105,6 +105,7 @@ If asked to work on actual implementation:
 
 ## Recent Changes
 
+- **Mar 30, 2026**: Status sync — Roadmap phases updated (Phase 2→95%, Phase 3→50%, Phase 4→20%); Testnet status→Active; Mainnet→In Preparation; Community Channels launch pushed to Q2 2026
 - **Feb 20, 2026**: Documentation now on main website only — all axionax-docs / GitHub Pages docs URLs removed; documentation links point to https://axionax.org
 - **Feb 20, 2026**: Data verification pass — Network table (Testnet link to Core README), License links (Core has no root LICENSE; use README#license), added axionax.org; copilot structure/stats/links aligned with actual repos
 - **Feb 20, 2026**: README overhaul — professional structure, English-only, Table of Contents, refined Quick Start & Roadmap
