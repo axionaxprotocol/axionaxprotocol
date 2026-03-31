@@ -9,7 +9,7 @@
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=6366F1&center=true&vCenter=true&width=600&lines=High-Performance+Layer-1+Blockchain;45%2C000%2B+TPS+%E2%80%A2+%3C0.5s+Finality;Decentralized+Computing+%26+AI" alt="Typing SVG" />
 
 [![Documentation](https://img.shields.io/badge/📚_Documentation-axionax.org-10B981?style=for-the-badge&logo=readthedocs&logoColor=white)](https://axionax.org)
-[![License](https://img.shields.io/badge/⚖️_License-AGPLv3/MIT-F59E0B?style=for-the-badge)](#-license)
+[![License](https://img.shields.io/badge/⚖️_License-MIT-F59E0B?style=for-the-badge)](LICENSE)
 [![Chain ID](https://img.shields.io/badge/🔗_Chain_ID-86137-8B5CF6?style=for-the-badge)](#)
 
 **High-Performance Layer-1 Blockchain for Decentralized Computing & AI Workloads**
@@ -28,7 +28,7 @@
 - [The axionax Universe](#-the-axionax-universe)
 - [Quick Start](#-quick-start)
 - [Network Information](#-network-information)
-- [Roadmap](#-roadmap)
+- [Roadmap](#%EF%B8%8F-roadmap)
 - [Contributing](#-contributing)
 - [License](#-license)
 
@@ -150,16 +150,6 @@ console.log('Transaction hash:', tx.hash);
 
 ---
 
-## 📊 Project Statistics
-
-<div align="center">
-
-[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=axionaxprotocol&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6366F1&icon_color=10B981&text_color=FFFFFF)](https://github.com/axionaxprotocol)
-
-</div>
-
----
-
 ## 🤝 Contributing
 
 We welcome contributions from everyone! Whether it's reporting bugs, improving documentation, or contributing code, your help is appreciated.
@@ -189,15 +179,9 @@ The axionax Protocol uses different licenses per component. See each repository 
 <div align="center">
 
 [![Website](https://img.shields.io/badge/🌐_Website-axionax.org-10B981?style=for-the-badge)](https://axionax.org)
-[![Documentation](https://img.shields.io/badge/📖_Documentation-axionax.org-green?style=for-the-badge)](https://axionax.org)
-[![Core Universe](https://img.shields.io/badge/🌌_Core_Universe-Repository-blue?style=for-the-badge)](https://github.com/axionaxprotocol/axionax-core-universe)
-[![Web Universe](https://img.shields.io/badge/🌐_Web_Universe-Repository-blue?style=for-the-badge)](https://github.com/axionaxprotocol/axionax-web-universe)
-
-**Community Channels**
-
-[![Discord](https://img.shields.io/badge/Discord-Coming_Soon-7289DA?style=flat-square&logo=discord)](https://github.com/axionaxprotocol)
-[![Twitter](https://img.shields.io/badge/Twitter-Coming_Soon-1DA1F2?style=flat-square&logo=twitter)](https://github.com/axionaxprotocol)
-[![Telegram](https://img.shields.io/badge/Telegram-Coming_Soon-2CA5E0?style=flat-square&logo=telegram)](https://github.com/axionaxprotocol)
+[![Documentation](https://img.shields.io/badge/📖_Docs-axionax.org-6366F1?style=for-the-badge)](https://axionax.org)
+[![Core Universe](https://img.shields.io/badge/🌌_Core-Repository-3B82F6?style=for-the-badge&logo=rust&logoColor=white)](https://github.com/axionaxprotocol/axionax-core-universe)
+[![Web Universe](https://img.shields.io/badge/🌐_Web-Repository-3B82F6?style=for-the-badge&logo=react&logoColor=white)](https://github.com/axionaxprotocol/axionax-web-universe)
 
 </div>
 
@@ -205,9 +189,6 @@ The axionax Protocol uses different licenses per component. See each repository 
 
 <div align="center">
 
-**Built with ❤️ by the axionax Protocol Team**  
-*Last Updated: March 30, 2026*
-
-![Snake animation](https://raw.githubusercontent.com/axionaxprotocol/axionaxprotocol/output/github-contribution-grid-snake-dark.svg)
+**Built with ❤️ by the axionax Protocol Team**
 
 </div>
