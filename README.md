@@ -144,8 +144,8 @@ console.log('Transaction hash:', tx.hash);
 | Phase | Key Deliverables | Status |
 | :--- | :--- | :---: |
 | **Phase 1: Foundation** | Core blockchain (Rust + PoPC), Smart contracts (WASM), TypeScript SDK, Universe architecture | ✅ **100%** |
-| **Phase 2: Optimization** | UI/UX enhancements, Production deployment, DevOps automation, Security audits, 45K+ TPS testing | 🔄 **70%** |
-| **Phase 3: Launch Prep** | Community channels, Faucet & Explorer, Validator documentation, Public Testnet Launch | 📅 **Q1 2026** |
+| **Phase 2: Optimization** | UI/UX enhancements, Production deployment, DevOps automation, Security audits, 45K+ TPS testing | ✅ **100%** |
+| **Phase 3: Launch Prep** | Community channels, Faucet & Explorer, Validator documentation, Public Testnet Launch | 🔄 **In Progress** |
 | **Phase 4: Mainnet** | Testnet validation, Genesis ceremony, Token distribution, Mainnet Launch | 🎯 **Q2 2026** |
 
 ---
@@ -178,6 +178,7 @@ For detailed guidelines, please refer to the [documentation on our main website]
 
 The axionax Protocol uses different licenses per component. See each repository for exact terms:
 
+- **This Repository:** MIT. See [LICENSE](LICENSE).
 - **Core Universe:** `core/` → AGPLv3; `ops/` and `tools/` → MIT. See [Core Universe → License](https://github.com/axionaxprotocol/axionax-core-universe#license).
 - **Web Universe:** MIT. See [Web Universe LICENSE](https://github.com/axionaxprotocol/axionax-web-universe/blob/main/LICENSE).
 
@@ -192,7 +193,7 @@ The axionax Protocol uses different licenses per component. See each repository 
 [![Core Universe](https://img.shields.io/badge/🌌_Core_Universe-Repository-blue?style=for-the-badge)](https://github.com/axionaxprotocol/axionax-core-universe)
 [![Web Universe](https://img.shields.io/badge/🌐_Web_Universe-Repository-blue?style=for-the-badge)](https://github.com/axionaxprotocol/axionax-web-universe)
 
-**Community Channels** *(Launching Q1 2026)*
+**Community Channels**
 
 [![Discord](https://img.shields.io/badge/Discord-Coming_Soon-7289DA?style=flat-square&logo=discord)](https://github.com/axionaxprotocol)
 [![Twitter](https://img.shields.io/badge/Twitter-Coming_Soon-1DA1F2?style=flat-square&logo=twitter)](https://github.com/axionaxprotocol)
@@ -205,7 +206,7 @@ The axionax Protocol uses different licenses per component. See each repository 
 <div align="center">
 
 **Built with ❤️ by the axionax Protocol Team**  
-*Last Updated: February 20, 2026*
+*Last Updated: March 30, 2026*
 
 ![Snake animation](https://raw.githubusercontent.com/axionaxprotocol/axionaxprotocol/output/github-contribution-grid-snake-dark.svg)
 
