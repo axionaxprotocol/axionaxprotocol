@@ -57,9 +57,9 @@ Maintain consistency with these core specs:
 ### Roadmap Phases
 Keep phase completion percentages accurate:
 - Phase 1 (Foundation): ✅ 100% Complete
-- Phase 2 (Optimization): ✅ 95% Complete
-- Phase 3 (Launch Prep): 🔄 50% (whitepaper, faucet tests, VPS tooling done; testnet active)
-- Phase 4 (Mainnet): 🔄 20% (genesis export, state validation, RPC hardening in progress)
+- Phase 2 (Optimization): ✅ 100% Complete
+- Phase 3 (Launch Prep): 🔄 In Progress
+- Phase 4 (Mainnet): 🎯 Q2 2026
 
 ### Tone & language
 - **English** only for repository-facing content
