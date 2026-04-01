@@ -2,7 +2,7 @@
 
 ## Repository Role
 
-This is the **organization-level landing page repository** for axionax Protocol. It contains only the main `README.md` that serves as the entry point for the entire project ecosystem.
+This is the **organization-level landing page repository** for **Axionax Protocol**. It contains the root `README.md` (and minimal supporting assets) that serve as the public entry point for the ecosystem on GitHub.
 
 **This is NOT a code repository.** The actual implementation lives in two separate Universe repositories:
 - **Core Universe** (Backend): `axionaxprotocol/axionax-core-universe` - Blockchain protocol, deployment, dev tools
@@ -30,8 +30,8 @@ When updating content, emphasize this modern monorepo architecture.
 
 ### Project Structure Reference
 ```
-axionax Protocol Organization
-├── axionaxprotocol/axionaxprotocol (this repo) - Landing page
+Axionax Protocol (GitHub organization)
+├── axionaxprotocol/axionaxprotocol (this repo) — Landing page
 ├── axionax-core-universe/
 │   ├── core/          - Rust blockchain + Python DeAI (PoPC, staking, RPC)
 │   ├── configs/       - Monolith / Scout TOML configs
@@ -47,19 +47,19 @@ Verify current layout in each repo's README when updating.
 
 ## Content Guidelines
 
-### Technical Specifications
-Maintain consistency with these core specs:
-- **Chain ID**: 86137 (Testnet), 86150 (Mainnet), 31337 (Local)
-- **Performance**: 45,000+ TPS, <0.5s finality, $0.0001 avg fee
-- **Consensus**: PoPC (Proof of Probabilistic Checking)
-- **Tech Stack**: Rust, Python, TypeScript, Next.js 14, Docker
+### Technical specifications
+Keep these aligned with the README and Universe repositories:
+- **Chain ID:** 86137 (testnet), 86150 (mainnet, planned), 31337 (local development)
+- **Performance:** State throughput, finality, and fees as *targets* or *design goals* unless citing a published benchmark; link to Core for measured results when available
+- **Consensus:** PoPC (Proof of Probabilistic Checking)
+- **Tech stack:** Rust, Python, TypeScript, Next.js 14, Docker
 
-### Roadmap Phases
-Keep phase completion percentages accurate:
-- Phase 1 (Foundation): ✅ 100% Complete
-- Phase 2 (Optimization): ✅ 95% Complete
-- Phase 3 (Launch Prep): 🔄 50% (whitepaper, faucet tests, VPS tooling done; testnet active)
-- Phase 4 (Mainnet): 🔄 20% (genesis export, state validation, RPC hardening in progress)
+### Roadmap phases
+Percentages are **planning indicators**; verify against Core/Web READMEs when updating:
+- Phase 1 (Foundation): complete
+- Phase 2 (Optimization): ~95%
+- Phase 3 (Launch preparation): ~50% (e.g. whitepaper, faucet, VPS tooling; public testnet active)
+- Phase 4 (Mainnet): ~20% (e.g. genesis export, state validation, RPC hardening)
 
 ### Tone & language
 - **English** only for repository-facing content
@@ -69,10 +69,10 @@ Keep phase completion percentages accurate:
 
 ## Common Updates
 
-### Adding New Features
+### Adding new features
 When referencing new features, link to the specific Universe repo:
 ```markdown
-- ✅ New feature in Core Universe ([PR #123](https://github.com/axionaxprotocol/axionax-core-universe/pull/123))
+- New feature in Core Universe ([PR #123](https://github.com/axionaxprotocol/axionax-core-universe/pull/123))
 ```
 
 ### Updating Statistics
@@ -88,12 +88,12 @@ Keep these links current and working:
 - Testnet RPC: See Core Universe README "Current Network (Testnet)" for live endpoints.
 - Issues: Link to the appropriate Universe repo.
 
-## Don't Do This
+## Do not
 
-❌ **Add source code** - This repo is documentation only  
-❌ **Create new directories** - Only `.github/` and root `README.md` belong here  
-❌ **Duplicate content** - Don't copy docs from Universe repos, link to them  
-❌ **Change license info** - Universe repos have specific licenses (AGPLv3/MIT)
+- **Add application or protocol source code** — implementation belongs in Core or Web Universe
+- **Add new top-level directories** without an explicit decision — default scope is `.github/`, `README.md`, and existing assets
+- **Duplicate Universe documentation** — summarize and link out
+- **Change license summaries** inaccurately — each Universe repo defines its own terms (AGPLv3/MIT split in Core; MIT in Web)
 
 ## When to Redirect
 
@@ -105,7 +105,7 @@ If asked to work on actual implementation:
 
 ## Recent Changes
 
-- **Apr 1, 2026**: README polish — Consistent **Axionax Protocol** branding; section headings without emoji; qualified throughput table; TOC anchor fixes; roadmap framed as planning indicators; last-updated date refreshed
+- **Apr 1, 2026**: README and Copilot refresh — **Axionax Protocol** branding; qualified metrics and planning-indicator roadmap; org-profile callout in README; SDK example `chainId: 31337` for localhost with testnet note; contributing uses `git switch`; community defers to axionax.org (no placeholder social badges); org-stats widget disclaimer; TOC includes Organization activity; Copilot specs/roadmap aligned; "Do not" section as plain list
 - **Mar 30, 2026**: Status sync — Roadmap phases updated (Phase 2→95%, Phase 3→50%, Phase 4→20%); Testnet status→Active; Mainnet→In Preparation; Community Channels launch pushed to Q2 2026
 - **Feb 20, 2026**: Documentation now on main website only — all axionax-docs / GitHub Pages docs URLs removed; documentation links point to https://axionax.org
 - **Feb 20, 2026**: Data verification pass — Network table (Testnet link to Core README), License links (Core has no root LICENSE; use README#license), added axionax.org; copilot structure/stats/links aligned with actual repos

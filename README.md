@@ -14,6 +14,8 @@
 
 **Layer-1 blockchain for decentralized computing and AI workloads**
 
+This repository contains the **organization profile** for Axionax Protocol on GitHub (overview and links). Protocol and application source code live in the [Core](#core-universe--protocol-and-infrastructure) and [Web](#web-universe--applications-and-sdk) Universe repositories.
+
 | Throughput | Finality | Consensus |
 | :---: | :---: | :--- |
 | 45,000+ TPS (target architecture) | Sub-0.5s | PoPC (Proof of Probabilistic Checking) |
@@ -30,6 +32,7 @@
 - [Quick start](#quick-start)
 - [Network information](#network-information)
 - [Roadmap](#roadmap)
+- [Organization activity](#organization-activity)
 - [Contributing](#contributing)
 - [License](#license)
 - [Connect and support](#connect-and-support)
@@ -109,7 +112,7 @@ import { AxionaxClient } from '@axionax/sdk';
 
 const client = new AxionaxClient({
   rpcUrl: 'http://localhost:8545',
-  chainId: 86137,
+  chainId: 31337, // local dev; use 86137 for public testnet
 });
 
 const tx = await client.sendTransaction({
@@ -145,20 +148,22 @@ Percentages are planning indicators; see Core and Web repositories for the lates
 
 ---
 
-## Repository activity
+## Organization activity
 
 <div align="center">
 
-[![GitHub organization stats](https://github-readme-stats.vercel.app/api?username=axionaxprotocol&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6366F1&icon_color=10B981&text_color=FFFFFF)](https://github.com/axionaxprotocol)
+[![GitHub organization overview](https://github-readme-stats.vercel.app/api?username=axionaxprotocol&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6366F1&icon_color=10B981&text_color=FFFFFF)](https://github.com/axionaxprotocol)
 
 </div>
+
+*Widget by [github-readme-stats](https://github.com/anuraghazra/github-readme-stats); figures are indicative.*
 
 ---
 
 ## Contributing
 
 1. Fork the relevant repository ([Core](https://github.com/axionaxprotocol/axionax-core-universe) or [Web](https://github.com/axionaxprotocol/axionax-web-universe)).  
-2. Create a branch (`git checkout -b feature/your-change`).  
+2. Create a branch (`git switch -c feature/your-change`).  
 3. Commit with clear messages (e.g. `feat:`, `fix:`, `docs:`).  
 4. Push and open a pull request.
 
@@ -184,11 +189,7 @@ Licensing varies by component. Refer to each repository:
 [![Core Universe](https://img.shields.io/badge/Core_Universe-GitHub-blue?style=for-the-badge)](https://github.com/axionaxprotocol/axionax-core-universe)
 [![Web Universe](https://img.shields.io/badge/Web_Universe-GitHub-blue?style=for-the-badge)](https://github.com/axionaxprotocol/axionax-web-universe)
 
-**Community channels** *(planned Q2 2026)*
-
-[![Discord](https://img.shields.io/badge/Discord-Coming_soon-7289DA?style=flat-square&logo=discord)](https://github.com/axionaxprotocol)
-[![Twitter](https://img.shields.io/badge/Twitter-Coming_soon-1DA1F2?style=flat-square&logo=twitter)](https://github.com/axionaxprotocol)
-[![Telegram](https://img.shields.io/badge/Telegram-Coming_soon-2CA5E0?style=flat-square&logo=telegram)](https://github.com/axionaxprotocol)
+**Community** — Official Discord, X (Twitter), and Telegram links will be listed on **[axionax.org](https://axionax.org)** when they go live *(planned Q2 2026)*.
 
 </div>
 
