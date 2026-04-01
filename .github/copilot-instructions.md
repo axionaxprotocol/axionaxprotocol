@@ -61,11 +61,11 @@ Keep phase completion percentages accurate:
 - Phase 3 (Launch Prep): 🔄 50% (whitepaper, faucet tests, VPS tooling done; testnet active)
 - Phase 4 (Mainnet): 🔄 20% (genesis export, state validation, RPC hardening in progress)
 
-### Tone & Language
-- **English** only (the entire repository now uses English)
-- Professional but friendly (use emojis in tables/sections)
-- Focus on tangible achievements over promises
-- Use "we" when referring to the team
+### Tone & language
+- **English** only for repository-facing content
+- Professional, direct, and scannable: minimal emoji in headings; reserve decorative elements for badges or optional footers where they aid scanning
+- Qualify performance claims where appropriate (e.g. *target architecture*, *planning indicators*) and link to Universe repos for ground truth
+- Use **Axionax Protocol** / **AXX** for product naming; avoid inconsistent casing (e.g. "axionax" in titles)
 
 ## Common Updates
 
@@ -105,6 +105,7 @@ If asked to work on actual implementation:
 
 ## Recent Changes
 
+- **Apr 1, 2026**: README polish — Consistent **Axionax Protocol** branding; section headings without emoji; qualified throughput table; TOC anchor fixes; roadmap framed as planning indicators; last-updated date refreshed
 - **Mar 30, 2026**: Status sync — Roadmap phases updated (Phase 2→95%, Phase 3→50%, Phase 4→20%); Testnet status→Active; Mainnet→In Preparation; Community Channels launch pushed to Q2 2026
 - **Feb 20, 2026**: Documentation now on main website only — all axionax-docs / GitHub Pages docs URLs removed; documentation links point to https://axionax.org
 - **Feb 20, 2026**: Data verification pass — Network table (Testnet link to Core README), License links (Core has no root LICENSE; use README#license), added axionax.org; copilot structure/stats/links aligned with actual repos
