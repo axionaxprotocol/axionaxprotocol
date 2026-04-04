@@ -14,7 +14,7 @@
 
 **Layer-1 blockchain for decentralized computing and AI workloads**
 
-This repository contains the **organization profile** for Axionax Protocol on GitHub (overview and links). Protocol and application source code live in the [Core](#core-universe--protocol-and-infrastructure) and [Web](#web-universe--applications-and-sdk) Universe repositories.
+This repository contains the **organization profile** for Axionax Protocol on GitHub (overview and links). For a **pinned snapshot** of upstream development, [Core](#core-universe--protocol-and-infrastructure) and [Web](#web-universe--applications-and-sdk) are also included as **Git submodules** at the repository root (see [Universe submodules](#universe-submodules)).
 
 | Throughput | Finality | Consensus |
 | :---: | :---: | :--- |
@@ -29,6 +29,7 @@ This repository contains the **organization profile** for Axionax Protocol on Gi
 - [Overview](#overview)
 - [Key features](#key-features)
 - [Ecosystem repositories](#ecosystem-repositories)
+- [Universe submodules](#universe-submodules)
 - [Quick start](#quick-start)
 - [Network information](#network-information)
 - [Roadmap](#roadmap)
@@ -79,6 +80,34 @@ Work is organized in two monorepos (**Universe** architecture): Core (protocol a
 - **Stack:** Next.js 14, React, TypeScript, Tailwind CSS, pnpm  
 - **Scope:** Web portals, marketplace dApp, `@axionax/sdk`, protocol-facing documentation  
 - **[Repository →](https://github.com/axionaxprotocol/axionax-web-universe)**
+
+---
+
+## Universe submodules
+
+The directories `axionax-core-universe/` and `axionax-web-universe/` are **Git submodules** pointing at the official Universe repositories. The parent repo records a **specific commit** for each submodule; that commit moves forward only when this repository is updated (for example after `git submodule update --remote` and a commit). This gives a clear, reviewable record of “how far” Core and Web were at each landing-page revision.
+
+### Clone this repository with submodules
+
+```bash
+git clone --recurse-submodules https://github.com/axionaxprotocol/axionaxprotocol.git
+cd axionaxprotocol
+```
+
+If you already cloned without submodules:
+
+```bash
+git submodule update --init --recursive
+```
+
+### Advance submodule pointers to the latest upstream commits
+
+```bash
+git submodule update --remote --merge
+# Review changes in axionax-core-universe/ and axionax-web-universe/, then commit the updated submodule SHAs in the parent repo
+```
+
+Use `git submodule status` to see the currently pinned revision for each Universe repo.
 
 ---
 

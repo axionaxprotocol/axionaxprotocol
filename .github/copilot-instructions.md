@@ -2,11 +2,13 @@
 
 ## Repository Role
 
-This is the **organization-level landing page repository** for **Axionax Protocol**. It contains the root `README.md` (and minimal supporting assets) that serve as the public entry point for the ecosystem on GitHub.
+This is the **organization-level landing page repository** for **Axionax Protocol**. It contains the root `README.md`, supporting assets, and **Git submodules** at the repository root that embed the two Universe upstreams for a **pinned, reviewable snapshot** of their current `main` (or default branch) history.
 
-**This is NOT a code repository.** The actual implementation lives in two separate Universe repositories:
-- **Core Universe** (Backend): `axionaxprotocol/axionax-core-universe` - Blockchain protocol, deployment, dev tools
-- **Web Universe** (Frontend): `axionaxprotocol/axionax-web-universe` - Web apps, marketplace, docs, SDK
+**Primary content is not application code authored here.** Implementation is developed in:
+- **Core Universe** (backend): `axionaxprotocol/axionax-core-universe` — protocol, deployment, dev tools (submodule path: `axionax-core-universe/`)
+- **Web Universe** (frontend): `axionaxprotocol/axionax-web-universe` — web apps, marketplace, docs, SDK (submodule path: `axionax-web-universe/`)
+
+Submodule **commits advance only when this repo is updated** (e.g. after `git submodule update --remote` and a parent commit). That is how maintainers record “Core/Web were at SHA … as of this landing-page revision.”
 
 ## Primary Responsibilities
 
@@ -28,22 +30,22 @@ The project recently consolidated from **7 separate repositories → 2 monorepos
 
 When updating content, emphasize this modern monorepo architecture.
 
-### Project Structure Reference
+### Project structure reference
 ```
-Axionax Protocol (GitHub organization)
-├── axionaxprotocol/axionaxprotocol (this repo) — Landing page
-├── axionax-core-universe/
-│   ├── core/          - Rust blockchain + Python DeAI (PoPC, staking, RPC)
-│   ├── configs/       - Monolith / Scout TOML configs
-│   ├── scripts/       - join-axionax, update-node, health-check
-│   ├── ops/           - Docker, Nginx, monitoring (e.g. ops/deploy)
-│   └── tools/         - Dev utilities, faucet
-└── axionax-web-universe/
-    ├── apps/          - web (Next.js), marketplace (Vite/React), etc.
-    ├── packages/sdk/  - TypeScript SDK (@axionax/sdk)
-    └── docs/          - Documentation (if present)
+axionaxprotocol/axionaxprotocol (this repo)
+├── README.md, assets/, .github/
+├── axionax-core-universe/   ← submodule → axionaxprotocol/axionax-core-universe
+│   ├── core/          — Rust blockchain + Python DeAI (PoPC, staking, RPC)
+│   ├── configs/       — Monolith / Scout TOML configs
+│   ├── scripts/       — join-axionax, update-node, health-check
+│   ├── ops/           — Docker, Nginx, monitoring (e.g. ops/deploy)
+│   └── tools/         — Dev utilities, faucet
+└── axionax-web-universe/    ← submodule → axionaxprotocol/axionax-web-universe
+    ├── apps/          — web (Next.js), marketplace (Vite/React), etc.
+    ├── packages/sdk/  — TypeScript SDK (@axionax/sdk)
+    └── docs/          — Documentation (if present)
 ```
-Verify current layout in each repo's README when updating.
+Verify layout in each submodule’s `main` (or default branch) when updating pointers or documentation.
 
 ## Content Guidelines
 
@@ -75,7 +77,12 @@ When referencing new features, link to the specific Universe repo:
 - New feature in Core Universe ([PR #123](https://github.com/axionaxprotocol/axionax-core-universe/pull/123))
 ```
 
-### Updating Statistics
+### Submodule pointers
+- After advancing submodules with `git submodule update --remote`, **commit the parent repo** so GitHub shows the new submodule SHAs (compare view / history).
+- Prefer short, descriptive parent commits: e.g. `chore: bump core-universe submodule to <short-sha>`.
+- Do not rewrite submodule history; treat them as read-only mirrors of upstream except for pointer bumps.
+
+### Updating statistics
 When adding or updating metrics in the README, verify against the actual repositories:
 - Test counts: run or check CI in Core (cargo test / pytest) and Web
 - File counts and doc page counts: confirm in each repo
@@ -90,9 +97,9 @@ Keep these links current and working:
 
 ## Do not
 
-- **Add application or protocol source code** — implementation belongs in Core or Web Universe
-- **Add new top-level directories** without an explicit decision — default scope is `.github/`, `README.md`, and existing assets
-- **Duplicate Universe documentation** — summarize and link out
+- **Implement protocol or product features inside the parent repo** — edit Core or Web Universe upstream, then bump submodule pointers here if needed
+- **Add unrelated top-level trees** — keep root limited to `README.md`, `assets/`, `.github/`, `.gitmodules`, and the two fixed submodule paths
+- **Duplicate Universe documentation** — summarize and link out (submodules are for checkout and SHA tracking, not doc copies)
 - **Change license summaries** inaccurately — each Universe repo defines its own terms (AGPLv3/MIT split in Core; MIT in Web)
 
 ## When to Redirect
@@ -105,6 +112,7 @@ If asked to work on actual implementation:
 
 ## Recent Changes
 
+- **Apr 1, 2026**: **Git submodules** — `axionax-core-universe/` and `axionax-web-universe/` at repo root; README “Universe submodules” section (`clone --recurse-submodules`, `submodule update --remote`); Copilot structure and “Do not” rules updated for submodule workflow
 - **Apr 1, 2026**: README and Copilot refresh — **Axionax Protocol** branding; qualified metrics and planning-indicator roadmap; org-profile callout in README; SDK example `chainId: 31337` for localhost with testnet note; contributing uses `git switch`; community defers to axionax.org (no placeholder social badges); org-stats widget disclaimer; TOC includes Organization activity; Copilot specs/roadmap aligned; "Do not" section as plain list
 - **Mar 30, 2026**: Status sync — Roadmap phases updated (Phase 2→95%, Phase 3→50%, Phase 4→20%); Testnet status→Active; Mainnet→In Preparation; Community Channels launch pushed to Q2 2026
 - **Feb 20, 2026**: Documentation now on main website only — all axionax-docs / GitHub Pages docs URLs removed; documentation links point to https://axionax.org
