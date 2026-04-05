@@ -2,11 +2,13 @@
 
 ## Repository Role
 
-This is the **organization-level landing page repository** for axionax Protocol. It contains only the main `README.md` that serves as the entry point for the entire project ecosystem.
+This is the **organization-level landing page repository** for **Axionax Protocol**. It contains the root `README.md`, supporting assets, and **Git submodules** at the repository root that embed the two Universe upstreams for a **pinned, reviewable snapshot** of their current `main` (or default branch) history.
 
-**This is NOT a code repository.** The actual implementation lives in two separate Universe repositories:
-- **Core Universe** (Backend): `axionaxprotocol/axionax-core-universe` - Blockchain protocol, deployment, dev tools
-- **Web Universe** (Frontend): `axionaxprotocol/axionax-web-universe` - Web apps, marketplace, docs, SDK
+**Primary content is not application code authored here.** Implementation is developed in:
+- **Core Universe** (backend): `axionaxprotocol/axionax-core-universe` — protocol, deployment, dev tools (submodule path: `axionax-core-universe/`)
+- **Web Universe** (frontend): `axionaxprotocol/axionax-web-universe` — web apps, marketplace, docs, SDK (submodule path: `axionax-web-universe/`)
+
+Submodule **commits advance only when this repo is updated** (e.g. after `git submodule update --remote` and a parent commit). That is how maintainers record “Core/Web were at SHA … as of this landing-page revision.”
 
 ## Primary Responsibilities
 
@@ -28,38 +30,42 @@ The project recently consolidated from **7 separate repositories → 2 monorepos
 
 When updating content, emphasize this modern monorepo architecture.
 
-### Project Structure Reference
+### Project structure reference
 ```
-axionax Protocol Organization
-├── axionaxprotocol/axionaxprotocol (this repo) - Landing page
-├── axionax-core-universe/
-│   ├── core/          - Rust blockchain + Python DeAI (PoPC, staking, RPC)
-│   ├── configs/       - Monolith / Scout TOML configs
-│   ├── scripts/       - join-axionax, update-node, health-check
-│   ├── ops/           - Docker, Nginx, monitoring (e.g. ops/deploy)
-│   └── tools/         - Dev utilities, faucet
-└── axionax-web-universe/
-    ├── apps/          - web (Next.js), marketplace (Vite/React), etc.
-    ├── packages/sdk/  - TypeScript SDK (@axionax/sdk)
-    └── docs/          - Documentation (if present)
+axionaxprotocol/axionaxprotocol (this repo)
+├── README.md, assets/, .github/
+├── axionax-core-universe/   ← submodule → axionaxprotocol/axionax-core-universe
+│   ├── core/          — Rust blockchain + Python DeAI (PoPC, staking, RPC)
+│   ├── configs/       — Monolith / Scout TOML configs
+│   ├── scripts/       — join-axionax, update-node, health-check
+│   ├── ops/           — Docker, Nginx, monitoring (e.g. ops/deploy)
+│   └── tools/         — Dev utilities, faucet
+└── axionax-web-universe/    ← submodule → axionaxprotocol/axionax-web-universe
+    ├── apps/          — web (Next.js), marketplace (Vite/React), etc.
+    ├── packages/sdk/  — TypeScript SDK (@axionax/sdk)
+    └── docs/          — Documentation (if present)
 ```
-Verify current layout in each repo's README when updating.
+Verify layout in each submodule’s `main` (or default branch) when updating pointers or documentation.
 
 ## Content Guidelines
 
-### Technical Specifications
-Maintain consistency with these core specs:
-- **Chain ID**: 86137 (Testnet), 86150 (Mainnet), 31337 (Local)
-- **Performance**: 45,000+ TPS, <0.5s finality, $0.0001 avg fee
-- **Consensus**: PoPC (Proof of Probabilistic Checking)
-- **Tech Stack**: Rust, Python, TypeScript, Next.js 14, Docker
+### Technical specifications
+Keep these aligned with the README and Universe repositories:
+- **Chain ID:** 86137 (testnet), 86150 (mainnet, planned), 31337 (local development)
+- **Performance:** State throughput, finality, and fees as *targets* or *design goals* unless citing a published benchmark; link to Core for measured results when available
+- **Consensus:** PoPC (Proof of Probabilistic Checking)
+- **Tech stack:** Rust, Python, TypeScript, Next.js 14, Docker
 
-### Roadmap Phases
-Keep phase completion percentages accurate:
-- Phase 1 (Foundation): ✅ 100% Complete
-- Phase 2 (Optimization): ✅ 100% Complete
-- Phase 3 (Launch Prep): 🔄 In Progress
-- Phase 4 (Mainnet): 🎯 Q2 2026
+### Roadmap phases
+Keep this aligned with the root **README** roadmap table and verify details in Core/Web Universe READMEs when updating.
+
+Current README framing (update this list when the README roadmap changes):
+- Phase 1 (Foundation): 100% complete
+- Phase 2 (Optimization): 100% complete
+- Phase 3 (Launch preparation): in progress
+- Phase 4 (Mainnet): Q2 2026 target
+
+Treat narrative percentages or delivery claims as **planning indicators** unless backed by a cited benchmark or release note in the Universe repos.
 
 ### Tone & language
 - **English** only for repository-facing content
@@ -69,13 +75,18 @@ Keep phase completion percentages accurate:
 
 ## Common Updates
 
-### Adding New Features
+### Adding new features
 When referencing new features, link to the specific Universe repo:
 ```markdown
-- ✅ New feature in Core Universe ([PR #123](https://github.com/axionaxprotocol/axionax-core-universe/pull/123))
+- New feature in Core Universe ([PR #123](https://github.com/axionaxprotocol/axionax-core-universe/pull/123))
 ```
 
-### Updating Statistics
+### Submodule pointers
+- After advancing submodules with `git submodule update --remote`, **commit the parent repo** so GitHub shows the new submodule SHAs (compare view / history).
+- Prefer short, descriptive parent commits: e.g. `chore: bump core-universe submodule to <short-sha>`.
+- Do not rewrite submodule history; treat them as read-only mirrors of upstream except for pointer bumps.
+
+### Updating statistics
 When adding or updating metrics in the README, verify against the actual repositories:
 - Test counts: run or check CI in Core (cargo test / pytest) and Web
 - File counts and doc page counts: confirm in each repo
@@ -88,12 +99,12 @@ Keep these links current and working:
 - Testnet RPC: See Core Universe README "Current Network (Testnet)" for live endpoints.
 - Issues: Link to the appropriate Universe repo.
 
-## Don't Do This
+## Do not
 
-❌ **Add source code** - This repo is documentation only  
-❌ **Create new directories** - Only `.github/` and root `README.md` belong here  
-❌ **Duplicate content** - Don't copy docs from Universe repos, link to them  
-❌ **Change license info** - Universe repos have specific licenses (AGPLv3/MIT)
+- **Implement protocol or product features inside the parent repo** — edit Core or Web Universe upstream, then bump submodule pointers here if needed
+- **Add unrelated top-level trees** — keep root limited to `README.md`, `LICENSE`, `AGENTS.md` (if present), `assets/`, `.github/`, `.gitmodules`, and the two fixed submodule paths
+- **Duplicate Universe documentation** — summarize and link out (submodules are for checkout and SHA tracking, not doc copies)
+- **Change license summaries** inaccurately — **this landing repo** is MIT (`LICENSE` at repository root); Core is AGPLv3/MIT by path; Web Universe is MIT
 
 ## When to Redirect
 
@@ -105,7 +116,9 @@ If asked to work on actual implementation:
 
 ## Recent Changes
 
-- **Apr 1, 2026**: README polish — Consistent **Axionax Protocol** branding; section headings without emoji; qualified throughput table; TOC anchor fixes; roadmap framed as planning indicators; last-updated date refreshed
+- **Apr 1, 2026**: **Merged to `main`** — Resolved README/Copilot conflicts with upstream; preserved root `LICENSE` (MIT), `AGENTS.md`, README roadmap table from `main`; integrated submodules + professional README sections
+- **Apr 1, 2026**: **Git submodules** — `axionax-core-universe/` and `axionax-web-universe/` at repo root; README “Universe submodules” section (`clone --recurse-submodules`, `submodule update --remote`); Copilot structure and “Do not” rules updated for submodule workflow
+- **Apr 1, 2026**: README and Copilot refresh — **Axionax Protocol** branding; qualified metrics and planning-indicator roadmap; org-profile callout in README; SDK example `chainId: 31337` for localhost with testnet note; contributing uses `git switch`; community defers to axionax.org (no placeholder social badges); org-stats widget disclaimer; TOC includes Organization activity; Copilot specs/roadmap aligned; "Do not" section as plain list
 - **Mar 30, 2026**: Status sync — Roadmap phases updated (Phase 2→95%, Phase 3→50%, Phase 4→20%); Testnet status→Active; Mainnet→In Preparation; Community Channels launch pushed to Q2 2026
 - **Feb 20, 2026**: Documentation now on main website only — all axionax-docs / GitHub Pages docs URLs removed; documentation links point to https://axionax.org
 - **Feb 20, 2026**: Data verification pass — Network table (Testnet link to Core README), License links (Core has no root LICENSE; use README#license), added axionax.org; copilot structure/stats/links aligned with actual repos

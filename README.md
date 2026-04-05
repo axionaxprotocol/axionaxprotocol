@@ -8,11 +8,13 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=6366F1&center=true&vCenter=true&width=600&lines=High-performance+Layer-1+blockchain;45%2C000%2B+TPS+%E2%80%A2+Sub-0.5s+finality;Decentralized+computing+and+AI+workloads" alt="Axionax Protocol — headline" />
 
-[![Documentation](https://img.shields.io/badge/📚_Documentation-axionax.org-10B981?style=for-the-badge&logo=readthedocs&logoColor=white)](https://axionax.org)
-[![License](https://img.shields.io/badge/⚖️_License-MIT-F59E0B?style=for-the-badge)](LICENSE)
-[![Chain ID](https://img.shields.io/badge/🔗_Chain_ID-86137-8B5CF6?style=for-the-badge)](#)
+[![Documentation](https://img.shields.io/badge/Documentation-axionax.org-10B981?style=for-the-badge&logo=readthedocs&logoColor=white)](https://axionax.org)
+[![License](https://img.shields.io/badge/License-MIT-F59E0B?style=for-the-badge)](LICENSE)
+[![Chain ID](https://img.shields.io/badge/Chain_ID-86137-8B5CF6?style=for-the-badge)](#network-information)
 
 **Layer-1 blockchain for decentralized computing and AI workloads**
+
+This repository contains the **organization profile** for Axionax Protocol on GitHub (overview and links). For a **pinned snapshot** of upstream development, [Core](#core-universe--protocol-and-infrastructure) and [Web](#web-universe--applications-and-sdk) are also included as **Git submodules** at the repository root (see [Universe submodules](#universe-submodules)).
 
 | Throughput | Finality | Consensus |
 | :---: | :---: | :--- |
@@ -22,15 +24,19 @@
 
 ---
 
-## 📖 Table of Contents
-- [Overview](#-overview)
-- [Key Features](#-key-features)
-- [The axionax Universe](#-the-axionax-universe)
-- [Quick Start](#-quick-start)
-- [Network Information](#-network-information)
-- [Roadmap](#%EF%B8%8F-roadmap)
-- [Contributing](#-contributing)
-- [License](#-license)
+## Table of contents
+
+- [Overview](#overview)
+- [Key features](#key-features)
+- [Ecosystem repositories](#ecosystem-repositories)
+- [Universe submodules](#universe-submodules)
+- [Quick start](#quick-start)
+- [Network information](#network-information)
+- [Roadmap](#roadmap)
+- [Organization activity](#organization-activity)
+- [Contributing](#contributing)
+- [License](#license)
+- [Connect and support](#connect-and-support)
 
 ---
 
@@ -77,6 +83,34 @@ Work is organized in two monorepos (**Universe** architecture): Core (protocol a
 
 ---
 
+## Universe submodules
+
+The directories `axionax-core-universe/` and `axionax-web-universe/` are **Git submodules** pointing at the official Universe repositories. The parent repo records a **specific commit** for each submodule; that commit moves forward only when this repository is updated (for example after `git submodule update --remote` and a commit). This gives a clear, reviewable record of “how far” Core and Web were at each landing-page revision.
+
+### Clone this repository with submodules
+
+```bash
+git clone --recurse-submodules https://github.com/axionaxprotocol/axionaxprotocol.git
+cd axionaxprotocol
+```
+
+If you already cloned without submodules:
+
+```bash
+git submodule update --init --recursive
+```
+
+### Advance submodule pointers to the latest upstream commits
+
+```bash
+git submodule update --remote --merge
+# Review changes in axionax-core-universe/ and axionax-web-universe/, then commit the updated submodule SHAs in the parent repo
+```
+
+Use `git submodule status` to see the currently pinned revision for each Universe repo.
+
+---
+
 ## Quick start
 
 ### Node operators and core developers
@@ -107,7 +141,7 @@ import { AxionaxClient } from '@axionax/sdk';
 
 const client = new AxionaxClient({
   rpcUrl: 'http://localhost:8545',
-  chainId: 86137,
+  chainId: 31337, // local dev; use 86137 for public testnet
 });
 
 const tx = await client.sendTransaction({
@@ -141,12 +175,24 @@ console.log('Transaction hash:', tx.hash);
 
 ---
 
-## 🤝 Contributing
+## Organization activity
 
-We welcome contributions from everyone! Whether it's reporting bugs, improving documentation, or contributing code, your help is appreciated.
+<div align="center">
+
+[![GitHub organization overview](https://github-readme-stats.vercel.app/api?username=axionaxprotocol&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6366F1&icon_color=10B981&text_color=FFFFFF)](https://github.com/axionaxprotocol)
+
+</div>
+
+*Widget by [github-readme-stats](https://github.com/anuraghazra/github-readme-stats); figures are indicative.*
+
+---
+
+## Contributing
+
+We welcome contributions: bug reports, documentation, and code improvements in the Universe repositories.
 
 1. Fork the relevant repository ([Core](https://github.com/axionaxprotocol/axionax-core-universe) or [Web](https://github.com/axionaxprotocol/axionax-web-universe)).  
-2. Create a branch (`git checkout -b feature/your-change`).  
+2. Create a branch (`git switch -c feature/your-change`).  
 3. Commit with clear messages (e.g. `feat:`, `fix:`, `docs:`).  
 4. Push and open a pull request.
 
@@ -168,10 +214,12 @@ Licensing varies by component. Refer to each repository:
 
 <div align="center">
 
-[![Website](https://img.shields.io/badge/🌐_Website-axionax.org-10B981?style=for-the-badge)](https://axionax.org)
-[![Documentation](https://img.shields.io/badge/📖_Docs-axionax.org-6366F1?style=for-the-badge)](https://axionax.org)
-[![Core Universe](https://img.shields.io/badge/🌌_Core-Repository-3B82F6?style=for-the-badge&logo=rust&logoColor=white)](https://github.com/axionaxprotocol/axionax-core-universe)
-[![Web Universe](https://img.shields.io/badge/🌐_Web-Repository-3B82F6?style=for-the-badge&logo=react&logoColor=white)](https://github.com/axionaxprotocol/axionax-web-universe)
+[![Website](https://img.shields.io/badge/Website-axionax.org-10B981?style=for-the-badge)](https://axionax.org)
+[![Documentation](https://img.shields.io/badge/Documentation-axionax.org-green?style=for-the-badge)](https://axionax.org)
+[![Core Universe](https://img.shields.io/badge/Core_Universe-GitHub-blue?style=for-the-badge&logo=rust&logoColor=white)](https://github.com/axionaxprotocol/axionax-core-universe)
+[![Web Universe](https://img.shields.io/badge/Web_Universe-GitHub-blue?style=for-the-badge&logo=react&logoColor=white)](https://github.com/axionaxprotocol/axionax-web-universe)
+
+**Community** — Official Discord, X (Twitter), and Telegram links will be listed on **[axionax.org](https://axionax.org)** when they go live *(planned Q2 2026)*.
 
 </div>
 
@@ -179,6 +227,9 @@ Licensing varies by component. Refer to each repository:
 
 <div align="center">
 
-**Built with ❤️ by the axionax Protocol Team**
+**Axionax Protocol**  
+*Last updated: April 1, 2026*
+
+![Contribution grid animation](https://raw.githubusercontent.com/axionaxprotocol/axionaxprotocol/output/github-contribution-grid-snake-dark.svg)
 
 </div>
