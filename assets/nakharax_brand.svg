@@ -1,0 +1,14 @@
+<svg width="720" height="180" viewBox="0 0 720 180" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="nakharax-lockup-title">
+  <title id="nakharax-lockup-title">nakharax.io logo lockup</title>
+  <g transform="translate(24 18) scale(.5625)">
+    <path d="M56 202H200L181 222H75L56 202Z" fill="#111318"/>
+    <path d="M83 176H173L160 191H96L83 176Z" fill="#FF7A1A"/>
+    <path d="M60 54H96L108 66V166H72L60 154V54Z" fill="#111318"/>
+    <path d="M148 54H184L196 66V154L184 166H148V54Z" fill="#111318"/>
+    <path d="M96 54H132L196 166H160L96 54Z" fill="#111318"/>
+    <path d="M96 54H125L141 82H112L96 54Z" fill="#29F06A"/>
+    <circle cx="196" cy="66" r="7" fill="#29F06A"/>
+    <circle cx="60" cy="154" r="7" fill="#29F06A"/>
+  </g>
+  <text x="190" y="112" fill="#111318" font-family="Inter, Arial, sans-serif" font-size="64" font-weight="700" letter-spacing="0">nakharax.io</text>
+</svg>

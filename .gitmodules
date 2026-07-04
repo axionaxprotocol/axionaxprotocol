@@ -1,6 +1,3 @@
-[submodule "axionax-core-universe"]
-	path = axionax-core-universe
-	url = https://github.com/axionaxprotocol/axionax-core-universe.git
-[submodule "axionax-web-universe"]
-	path = axionax-web-universe
-	url = https://github.com/axionaxprotocol/axionax-web-universe.git
+[submodule "nakharax"]
+	path = nakharax
+	url = https://github.com/axionaxprotocol/nakharax.git

@@ -1,24 +1,24 @@
 <div align="center">
 
-<img src="assets/axionax_brand.jpg" width="200" alt="Axionax brand logo" />
-&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="assets/axx_token.jpg" width="200" alt="AXX token logo" />
+<img src="assets/nakharax_brand.svg" width="360" alt="nakharax.io brand lockup" />
 
-# Axionax Protocol
+# nakharax.io
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=6366F1&center=true&vCenter=true&width=600&lines=High-performance+Layer-1+blockchain;45%2C000%2B+TPS+%E2%80%A2+Sub-0.5s+finality;Decentralized+computing+and+AI+workloads" alt="Axionax Protocol — headline" />
+<sub>formerly **Axionax Protocol**. Native token: **NAK** (was AXX).</sub>
 
-[![Documentation](https://img.shields.io/badge/Documentation-axionax.org-10B981?style=for-the-badge&logo=readthedocs&logoColor=white)](https://axionax.org)
-[![License](https://img.shields.io/badge/License-MIT-F59E0B?style=for-the-badge)](LICENSE)
-[![Chain ID](https://img.shields.io/badge/Chain_ID-86137-8B5CF6?style=for-the-badge)](#network-information)
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=29F06A&center=true&vCenter=true&width=600&lines=Cheap%2C+accessible+compute+for+everyone;A+paid%2C+verifiable+grid+for+parallel+science+%26+AI;Own+a+node%2C+earn+NAK" alt="nakharax.io — headline" />
 
-**Layer-1 blockchain for decentralized computing and AI workloads**
+[![Documentation](https://img.shields.io/badge/Documentation-nakharax.io-29F06A?style=for-the-badge&logo=readthedocs&logoColor=white)](https://nakharax.io)
+[![License](https://img.shields.io/badge/License-AGPL--3.0%20%2F%20MIT-FF7A1A?style=for-the-badge)](LICENSE)
+[![Chain ID](https://img.shields.io/badge/Testnet_Chain_ID-86137-111318?style=for-the-badge)](#network-information)
 
-This repository contains the **organization profile** for Axionax Protocol on GitHub (overview and links). For a **pinned snapshot** of upstream development, [Core](#core-universe--protocol-and-infrastructure) and [Web](#web-universe--applications-and-sdk) are also included as **Git submodules** at the repository root (see [Universe submodules](#universe-submodules)).
+**Layer-1 network for decentralized compute — PoPC verification, a paid compute marketplace, and science/AI workloads at the edge**
 
-| Throughput | Finality | Consensus |
+This repository contains the **organization profile** for nakharax.io on GitHub (overview and links). A **pinned snapshot** of upstream development is also included as a **Git submodule** at the repository root (see [Universe submodule](#universe-submodule)).
+
+| Consensus | Native token | Mainnet target |
 | :---: | :---: | :--- |
-| 45,000+ TPS (target architecture) | Sub-0.5s | PoPC (Proof of Probabilistic Checking) |
+| PoPC (Proof of Probabilistic Checking) | NAK | Q2 2026 |
 
 </div>
 
@@ -27,9 +27,10 @@ This repository contains the **organization profile** for Axionax Protocol on Gi
 ## Table of contents
 
 - [Overview](#overview)
+- [Naming & rebrand](#naming--rebrand)
 - [Key features](#key-features)
-- [Ecosystem repositories](#ecosystem-repositories)
-- [Universe submodules](#universe-submodules)
+- [Ecosystem repository](#ecosystem-repository)
+- [Universe submodule](#universe-submodule)
 - [Quick start](#quick-start)
 - [Network information](#network-information)
 - [Roadmap](#roadmap)
@@ -42,9 +43,24 @@ This repository contains the **organization profile** for Axionax Protocol on Gi
 
 ## Overview
 
-**Axionax Protocol (AXX)** is a Layer-1 network built to run high-throughput decentralized computing and AI-oriented workloads. Execution, validation, data availability, and settlement are integrated in a single stack so builders can deploy without stitching together external modular services.
+**nakharax.io (NAK)** is a Layer-1 network built to run high-throughput decentralized compute for parallel science and AI workloads. Execution, validation, data availability, and settlement are integrated in a single stack so operators can run a node and earn NAK, and builders can deploy without stitching together external modular services.
 
 The design emphasizes performance, security, and a straightforward path for operators and application developers.
+
+---
+
+## Naming & rebrand
+
+The project was renamed **Axionax Protocol → nakharax.io**. The in-repo rename in the upstream monorepo is complete and verified (workspace tests green):
+
+| Layer | Result |
+| :--- | :--- |
+| Brand / docs / UI | ✅ nakharax.io |
+| Native token | ✅ `NAK` (was `AXX`) |
+| Domain | ✅ `nakharax.io` (was `axionax.org`) |
+| Code identifiers, env vars, packages | ✅ renamed (e.g. `@nakharax/sdk`, `NAKHARAX_*`) |
+
+See the upstream repo's [`docs/REBRAND_MIGRATION.md`](https://github.com/axionaxprotocol/nakharax/blob/main/docs/REBRAND_MIGRATION.md) for the full migration status.
 
 ---
 
@@ -52,62 +68,63 @@ The design emphasizes performance, security, and a straightforward path for oper
 
 | Area | Summary |
 | :--- | :--- |
-| **Throughput** | Architecture targets **45,000+ TPS** with **sub-0.5s** finality for latency-sensitive and compute-heavy use cases. |
+| **Compute marketplace** | A paid, verifiable grid where node operators earn **NAK** for parallel science and AI workloads. |
 | **Consensus** | **Proof of Probabilistic Checking (PoPC)** supports decentralized validation with efficient block processing. |
 | **Data availability** | Built-in data availability layer reduces dependence on third-party DA networks. |
-| **Compute and AI** | Primitives and tooling aimed at decentralized inference, training workflows, and general compute on-chain and adjacent services. |
+| **Edge compute and AI** | Primitives and tooling for decentralized inference, training workflows, and on-chain/adjacent compute — including NPU-accelerated (Hailo-8) worker roles. |
 
 ---
 
-## Ecosystem repositories
+## Ecosystem repository
 
-Work is organized in two monorepos (**Universe** architecture): Core (protocol and operations) and Web (applications and SDK).
+Work is organized as a **single monorepo** (Web ↔ Core boundary enforced in-repo, communicating only via the JSON-RPC contract on port 8545).
 
-### Core Universe — protocol and infrastructure
+[![nakharax](https://img.shields.io/badge/nakharax-Testnet_live-29F06A?style=for-the-badge&logo=rust)](https://github.com/axionaxprotocol/nakharax)
+[![Stars](https://img.shields.io/github/stars/axionaxprotocol/nakharax?style=flat-square&logo=github)](https://github.com/axionaxprotocol/nakharax/stargazers)
 
-[![Core Universe](https://img.shields.io/badge/Core_Universe-Production-10B981?style=for-the-badge&logo=rust)](https://github.com/axionaxprotocol/axionax-core-universe)
-[![Stars](https://img.shields.io/github/stars/axionaxprotocol/axionax-core-universe?style=flat-square&logo=github)](https://github.com/axionaxprotocol/axionax-core-universe/stargazers)
+- **Stack:** Rust, Python, TypeScript, Next.js 14, Docker
+- **Scope:** Blockchain node (`services/core`), PoPC consensus, WASM runtime, web dApp + node OS dashboard (`apps/`), shared SDK (`packages/`)
+- **[Repository →](https://github.com/axionaxprotocol/nakharax)**
 
-- **Stack:** Rust, Python, Docker, shell automation  
-- **Scope:** Blockchain node, PoPC consensus, WASM runtime, deployment and testing tooling  
-- **[Repository →](https://github.com/axionaxprotocol/axionax-core-universe)**
-
-### Web Universe — applications and SDK
-
-[![Web Universe](https://img.shields.io/badge/Web_Universe-Live-3B82F6?style=for-the-badge&logo=react)](https://github.com/axionaxprotocol/axionax-web-universe)
-[![Stars](https://img.shields.io/github/stars/axionaxprotocol/axionax-web-universe?style=flat-square&logo=github)](https://github.com/axionaxprotocol/axionax-web-universe/stargazers)
-
-- **Stack:** Next.js 14, React, TypeScript, Tailwind CSS, pnpm  
-- **Scope:** Web portals, marketplace dApp, `@axionax/sdk`, protocol-facing documentation  
-- **[Repository →](https://github.com/axionaxprotocol/axionax-web-universe)**
+```
+nakharax/
+├── apps/
+│   ├── web/              # Public dApp + marketplace (Next.js · TypeScript)
+│   └── os-dashboard/     # Self-hosted node OS UI (Next.js · Tailwind)
+├── services/
+│   └── core/             # Blockchain core + DeAI worker (Rust · Python)
+├── packages/             # Shared TypeScript packages (@nakharax/sdk)
+├── docs/                 # Cross-cutting docs (playbook, audits, RFCs)
+└── scripts/               # Cross-cutting ops scripts
+```
 
 ---
 
-## Universe submodules
+## Universe submodule
 
-The directories `axionax-core-universe/` and `axionax-web-universe/` are **Git submodules** pointing at the official Universe repositories. The parent repo records a **specific commit** for each submodule; that commit moves forward only when this repository is updated (for example after `git submodule update --remote` and a commit). This gives a clear, reviewable record of “how far” Core and Web were at each landing-page revision.
+The directory `nakharax/` is a **Git submodule** pointing at the official upstream repository. The parent repo records a **specific commit**; that commit moves forward only when this repository is updated (for example after `git submodule update --remote` and a commit). This gives a clear, reviewable record of "how far" upstream was at each landing-page revision.
 
-### Clone this repository with submodules
+### Clone this repository with the submodule
 
 ```bash
 git clone --recurse-submodules https://github.com/axionaxprotocol/axionaxprotocol.git
 cd axionaxprotocol
 ```
 
-If you already cloned without submodules:
+If you already cloned without the submodule:
 
 ```bash
 git submodule update --init --recursive
 ```
 
-### Advance submodule pointers to the latest upstream commits
+### Advance the submodule pointer to the latest upstream commit
 
 ```bash
 git submodule update --remote --merge
-# Review changes in axionax-core-universe/ and axionax-web-universe/, then commit the updated submodule SHAs in the parent repo
+# Review changes in nakharax/, then commit the updated submodule SHA in the parent repo
 ```
 
-Use `git submodule status` to see the currently pinned revision for each Universe repo.
+Use `git submodule status` to see the currently pinned revision.
 
 ---
 
@@ -116,40 +133,35 @@ Use `git submodule status` to see the currently pinned revision for each Univers
 ### Node operators and core developers
 
 ```bash
-git clone https://github.com/axionaxprotocol/axionax-core-universe.git
-cd axionax-core-universe/core
-cargo build --release
+git clone https://github.com/axionaxprotocol/nakharax.git
+cd nakharax/services/core
+docker compose -f docker-compose.dev.yml up -d --build
 ```
 
 ### dApp and web developers
 
 ```bash
-git clone https://github.com/axionaxprotocol/axionax-web-universe.git
-cd axionax-web-universe
+git clone https://github.com/axionaxprotocol/nakharax.git
+cd nakharax
 pnpm install
-pnpm dev
+pnpm --filter nakharax-os-dashboard dev
 ```
 
 ### SDK (npm)
 
 ```bash
-npm install @axionax/sdk
+npm install @nakharax/sdk
 ```
 
 ```typescript
-import { AxionaxClient } from '@axionax/sdk';
+import { getBlockNumber, getBalance, isReachable, DEFAULT_NODES } from '@nakharax/sdk';
 
-const client = new AxionaxClient({
-  rpcUrl: 'http://localhost:8545',
-  chainId: 31337, // local dev; use 86137 for public testnet
-});
+const rpcUrl = DEFAULT_NODES[0].url; // https://rpc.nakharax.io (public testnet)
 
-const tx = await client.sendTransaction({
-  to: '0x742d35Cc6634C0532925a3b844Bc9e7595f0bEb',
-  value: '1000000000000000000', // 1 AXX
-});
-
-console.log('Transaction hash:', tx.hash);
+if (await isReachable(rpcUrl)) {
+  const block = await getBlockNumber(rpcUrl);
+  console.log('Latest block:', block.ok ? block.data : block.error.message);
+}
 ```
 
 ---
@@ -159,8 +171,10 @@ console.log('Transaction hash:', tx.hash);
 | Network | Chain ID | RPC | Status |
 | :--- | :---: | :--- | :---: |
 | Local development | `31337` | `http://localhost:8545` | Available |
-| Testnet | `86137` | See [Core Universe README — testnet](https://github.com/axionaxprotocol/axionax-core-universe#current-network-testnet) | Active |
+| Testnet | `86137` | `https://rpc.nakharax.io` | Active |
 | Mainnet | `86150` | — | In preparation |
+
+Public testnet endpoints: `https://rpc.nakharax.io` · explorer · api · faucet · dApp at `https://app.nakharax.io`. See the [upstream README — Network](https://github.com/axionaxprotocol/nakharax#network) for validator details and P2P troubleshooting.
 
 ---
 
@@ -169,9 +183,9 @@ console.log('Transaction hash:', tx.hash);
 | Phase | Focus | Status |
 | :--- | :--- | :---: |
 | **Phase 1: Foundation** | Core blockchain (Rust + PoPC), Smart contracts (WASM), TypeScript SDK, Universe architecture | ✅ **100%** |
-| **Phase 2: Optimization** | UI/UX enhancements, Production deployment, DevOps automation, Security audits, 45K+ TPS testing | ✅ **100%** |
-| **Phase 3: Launch Prep** | Community channels, Faucet & Explorer, Validator documentation, Public Testnet Launch | 🔄 **In Progress** |
-| **Phase 4: Mainnet** | Testnet validation, Genesis ceremony, Token distribution, Mainnet Launch | 🎯 **Q2 2026** |
+| **Phase 2: Optimization** | UI/UX enhancements, Production deployment, DevOps automation, Security audits, throughput testing | ✅ **100%** |
+| **Phase 3: Launch Prep** | Axionax → nakharax.io rebrand, public testnet validators (EU + AU), faucet & explorer, validator documentation | 🔄 **In Progress** |
+| **Phase 4: Mainnet** | Testnet validation, Genesis ceremony, Token distribution (NAK), Mainnet Launch | 🎯 **Q2 2026** |
 
 ---
 
@@ -179,7 +193,7 @@ console.log('Transaction hash:', tx.hash);
 
 <div align="center">
 
-[![GitHub organization overview](https://github-readme-stats.vercel.app/api?username=axionaxprotocol&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6366F1&icon_color=10B981&text_color=FFFFFF)](https://github.com/axionaxprotocol)
+[![GitHub organization overview](https://github-readme-stats.vercel.app/api?username=axionaxprotocol&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=29F06A&icon_color=FF7A1A&text_color=FFFFFF)](https://github.com/axionaxprotocol)
 
 </div>
 
@@ -189,24 +203,23 @@ console.log('Transaction hash:', tx.hash);
 
 ## Contributing
 
-We welcome contributions: bug reports, documentation, and code improvements in the Universe repositories.
+We welcome contributions: bug reports, documentation, and code improvements.
 
-1. Fork the relevant repository ([Core](https://github.com/axionaxprotocol/axionax-core-universe) or [Web](https://github.com/axionaxprotocol/axionax-web-universe)).  
-2. Create a branch (`git switch -c feature/your-change`).  
-3. Commit with clear messages (e.g. `feat:`, `fix:`, `docs:`).  
+1. Fork the [upstream repository](https://github.com/axionaxprotocol/nakharax).
+2. Create a branch (`git switch -c feature/your-change`).
+3. Commit with clear messages (e.g. `feat:`, `fix:`, `docs:`).
 4. Push and open a pull request.
 
-Guidelines and detailed processes are published on **[axionax.org](https://axionax.org)**.
+Guidelines and detailed processes are published on **[nakharax.io](https://nakharax.io)**.
 
 ---
 
 ## License
 
-Licensing varies by component. Refer to each repository:
+Dual-licensed under **AGPL-3.0** (default) or **MIT** for explicit downstream agreements:
 
 - **This Repository:** MIT. See [LICENSE](LICENSE).
-- **Core Universe:** `core/` → AGPLv3; `ops/` and `tools/` → MIT. See [Core Universe → License](https://github.com/axionaxprotocol/axionax-core-universe#license).
-- **Web Universe:** MIT. See [Web Universe LICENSE](https://github.com/axionaxprotocol/axionax-web-universe/blob/main/LICENSE).
+- **Upstream (`nakharax`):** AGPL-3.0 by default; MIT for explicit downstream agreements. See [License in each sub-tree](https://github.com/axionaxprotocol/nakharax#license).
 
 ---
 
@@ -214,12 +227,11 @@ Licensing varies by component. Refer to each repository:
 
 <div align="center">
 
-[![Website](https://img.shields.io/badge/Website-axionax.org-10B981?style=for-the-badge)](https://axionax.org)
-[![Documentation](https://img.shields.io/badge/Documentation-axionax.org-green?style=for-the-badge)](https://axionax.org)
-[![Core Universe](https://img.shields.io/badge/Core_Universe-GitHub-blue?style=for-the-badge&logo=rust&logoColor=white)](https://github.com/axionaxprotocol/axionax-core-universe)
-[![Web Universe](https://img.shields.io/badge/Web_Universe-GitHub-blue?style=for-the-badge&logo=react&logoColor=white)](https://github.com/axionaxprotocol/axionax-web-universe)
+[![Website](https://img.shields.io/badge/Website-nakharax.io-29F06A?style=for-the-badge)](https://nakharax.io)
+[![Documentation](https://img.shields.io/badge/Documentation-nakharax.io-29F06A?style=for-the-badge)](https://nakharax.io)
+[![nakharax](https://img.shields.io/badge/nakharax-GitHub-111318?style=for-the-badge&logo=rust&logoColor=white)](https://github.com/axionaxprotocol/nakharax)
 
-**Community** — Official Discord, X (Twitter), and Telegram links will be listed on **[axionax.org](https://axionax.org)** when they go live *(planned Q2 2026)*.
+**Community** — Official Discord, X (Twitter), and Telegram links will be listed on **[nakharax.io](https://nakharax.io)** when they go live *(planned Q2 2026)*.
 
 </div>
 
@@ -227,8 +239,8 @@ Licensing varies by component. Refer to each repository:
 
 <div align="center">
 
-**Axionax Protocol**  
-*Last updated: April 1, 2026*
+**nakharax.io**
+*Last updated: July 4, 2026*
 
 ![Contribution grid animation](https://raw.githubusercontent.com/axionaxprotocol/axionaxprotocol/output/github-contribution-grid-snake-dark.svg)
 
