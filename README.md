@@ -1,180 +1,166 @@
 <div align="center">
 
-<img src="assets/nakharax_brand.svg" width="360" alt="nakharax.io brand lockup" />
+<img src="assets/nakharax_brand.svg" width="400" alt="nakharax.io" />
 
-# nakharax.io
+<br />
 
-<sub>formerly **Axionax Protocol**. Native token: **NAK** (was AXX).</sub>
+**Cheap, accessible compute for everyone.**
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=1000&color=29F06A&center=true&vCenter=true&width=600&lines=Cheap%2C+accessible+compute+for+everyone;A+paid%2C+verifiable+grid+for+parallel+science+%26+AI;Own+a+node%2C+earn+NAK" alt="nakharax.io — headline" />
+A paid, verifiable grid for parallel science and AI — powered by Proof of Probabilistic Checking.
 
-[![Documentation](https://img.shields.io/badge/Documentation-nakharax.io-29F06A?style=for-the-badge&logo=readthedocs&logoColor=white)](https://nakharax.io)
-[![License](https://img.shields.io/badge/License-AGPL--3.0%20%2F%20MIT-FF7A1A?style=for-the-badge)](LICENSE)
-[![Chain ID](https://img.shields.io/badge/Testnet_Chain_ID-86137-111318?style=for-the-badge)](#network-information)
+<br />
 
-**Layer-1 network for decentralized compute — PoPC verification, a paid compute marketplace, and science/AI workloads at the edge**
-
-This repository contains the **organization profile** for nakharax.io on GitHub (overview and links). A **pinned snapshot** of upstream development is also included as a **Git submodule** at the repository root (see [Universe submodule](#universe-submodule)).
-
-| Consensus | Native token | Mainnet target |
-| :---: | :---: | :--- |
-| PoPC (Proof of Probabilistic Checking) | NAK | Q2 2026 |
+[![Testnet](https://img.shields.io/badge/Testnet-86137-29F06A?style=flat-square)](#network)
+[![Rust](https://img.shields.io/badge/Rust-1.81%2B-111318?style=flat-square&logo=rust&logoColor=white)](https://www.rust-lang.org/)
+[![License](https://img.shields.io/badge/AGPL--3.0_/_MIT-FF7A1A?style=flat-square)](LICENSE)
+[![nakharax.io](https://img.shields.io/badge/nakharax.io-29F06A?style=flat-square&logo=googlechrome&logoColor=white)](https://nakharax.io)
 
 </div>
 
 ---
 
-## Table of contents
+## What is nakharax.io?
 
-- [Overview](#overview)
-- [Naming & rebrand](#naming--rebrand)
-- [Key features](#key-features)
-- [Ecosystem repository](#ecosystem-repository)
-- [Universe submodule](#universe-submodule)
-- [Quick start](#quick-start)
-- [Network information](#network-information)
-- [Roadmap](#roadmap)
-- [Organization activity](#organization-activity)
-- [Contributing](#contributing)
-- [License](#license)
-- [Connect and support](#connect-and-support)
+**nakharax.io** is a decentralized compute network where anyone with a PC, server, or Raspberry Pi can lend spare cycles and earn **NAK** — and researchers who could never afford a supercomputer can rent thousands of idle machines to run simulations, batch inference, and parameter sweeps.
+
+The blockchain is the **trust and settlement rail**: job escrow, payment in NAK, and reputation. Verification is handled by **Proof of Probabilistic Checking (PoPC)**, which validates compute results from untrusted workers in microseconds.
+
+> Think: a modern, paid [BOINC](https://boinc.berkeley.edu/) / [Folding@home](https://foldingathome.org/) — with verification and a marketplace.
+
+<sub>Formerly **Axionax Protocol** (AXX). See [rebrand status](#rebrand-status).</sub>
 
 ---
 
-## Overview
+## Why it matters
 
-**nakharax.io (NAK)** is a Layer-1 network built to run high-throughput decentralized compute for parallel science and AI workloads. Execution, validation, data availability, and settlement are integrated in a single stack so operators can run a node and earn NAK, and builders can deploy without stitching together external modular services.
-
-The design emphasizes performance, security, and a straightforward path for operators and application developers.
-
----
-
-## Naming & rebrand
-
-The project was renamed **Axionax Protocol → nakharax.io**. The in-repo rename in the upstream monorepo is complete and verified (workspace tests green):
-
-| Layer | Result |
+| Problem | nakharax.io |
 | :--- | :--- |
-| Brand / docs / UI | ✅ nakharax.io |
-| Native token | ✅ `NAK` (was `AXX`) |
-| Domain | ✅ `nakharax.io` (was `axionax.org`) |
-| Code identifiers, env vars, packages | ✅ renamed (e.g. `@nakharax/sdk`, `NAKHARAX_*`) |
-
-See the upstream repo's [`docs/REBRAND_MIGRATION.md`](https://github.com/axionaxprotocol/nakharax/blob/main/docs/REBRAND_MIGRATION.md) for the full migration status.
+| Cloud compute is expensive and centralized | Workers earn NAK; requesters pay less than AWS/GCP |
+| Volunteer grids have no incentive layer | NAK payment makes contribution sustainable |
+| You can't trust a stranger's compute result | PoPC verifies 1,000 samples in **~437 µs** |
+| AI inference on foreign servers breaks data sovereignty | On-device / in-country private inference (PDPA/GDPR-ready) |
 
 ---
 
-## Key features
+## Architecture
 
-| Area | Summary |
-| :--- | :--- |
-| **Compute marketplace** | A paid, verifiable grid where node operators earn **NAK** for parallel science and AI workloads. |
-| **Consensus** | **Proof of Probabilistic Checking (PoPC)** supports decentralized validation with efficient block processing. |
-| **Data availability** | Built-in data availability layer reduces dependence on third-party DA networks. |
-| **Edge compute and AI** | Primitives and tooling for decentralized inference, training workflows, and on-chain/adjacent compute — including NPU-accelerated (Hailo-8) worker roles. |
-
----
-
-## Ecosystem repository
-
-Work is organized as a **single monorepo** (Web ↔ Core boundary enforced in-repo, communicating only via the JSON-RPC contract on port 8545).
-
-[![nakharax](https://img.shields.io/badge/nakharax-Testnet_live-29F06A?style=for-the-badge&logo=rust)](https://github.com/axionaxprotocol/nakharax)
-[![Stars](https://img.shields.io/github/stars/axionaxprotocol/nakharax?style=flat-square&logo=github)](https://github.com/axionaxprotocol/nakharax/stargazers)
-
-- **Stack:** Rust, Python, TypeScript, Next.js 14, Docker
-- **Scope:** Blockchain node (`services/core`), PoPC consensus, WASM runtime, web dApp + node OS dashboard (`apps/`), shared SDK (`packages/`)
-- **[Repository →](https://github.com/axionaxprotocol/nakharax)**
+One monorepo. Strict **Web ↔ Core** boundary — they communicate only via JSON-RPC on port `8545`.
 
 ```
 nakharax/
 ├── apps/
-│   ├── web/              # Public dApp + marketplace (Next.js · TypeScript)
-│   └── os-dashboard/     # Self-hosted node OS UI (Next.js · Tailwind)
+│   ├── web/                 Next.js dApp + compute marketplace
+│   └── os-dashboard/        Self-hosted node OS dashboard
 ├── services/
-│   └── core/             # Blockchain core + DeAI worker (Rust · Python)
-├── packages/             # Shared TypeScript packages (@nakharax/sdk)
-├── docs/                 # Cross-cutting docs (playbook, audits, RFCs)
-└── scripts/               # Cross-cutting ops scripts
+│   └── core/                Rust blockchain node + Python DeAI worker
+├── packages/
+│   └── sdk/                 @nakharax/sdk — typed RPC client (TypeScript)
+├── docs/                    Protocol docs, audits, RFCs
+└── scripts/                 Ops tooling
 ```
+
+| Component | Stack | Status |
+| :--- | :--- | :---: |
+| PoPC consensus engine | Rust | Shipping |
+| Full node / block production | Rust | Shipping |
+| Staking & governance | Rust | Shipping |
+| JSON-RPC (ETH-compatible + custom) | Rust | Shipping |
+| DeAI worker (AI inference) | Python + PyTorch | Shipping |
+| TypeScript SDK | TypeScript | Shipping |
+| Compute marketplace (on-chain escrow) | Solidity + Python | In progress |
+| Data availability (erasure coding) | Rust | In progress |
+
+<sub>Full subsystem status: [`docs/REALITY_MAP.md`](https://github.com/axionaxprotocol/nakharax/blob/main/docs/REALITY_MAP.md)</sub>
 
 ---
 
-## Universe submodule
+## Network
 
-The directory `nakharax/` is a **Git submodule** pointing at the official upstream repository. The parent repo records a **specific commit**; that commit moves forward only when this repository is updated (for example after `git submodule update --remote` and a commit). This gives a clear, reviewable record of "how far" upstream was at each landing-page revision.
+### Testnet — Chain ID `86137`
 
-### Clone this repository with the submodule
+| Node | Location | Role | RPC |
+| :--- | :---: | :--- | :--- |
+| Validator #1 | EU | Validator + RPC + Nakharax OS | `https://app.nakharax.io` |
+| Validator #2 | AU | Validator + chain services | `https://rpc.nakharax.io` |
 
-```bash
-git clone --recurse-submodules https://github.com/axionaxprotocol/axionaxprotocol.git
-cd axionaxprotocol
-```
+Public endpoints: **RPC** `https://rpc.nakharax.io` · **Explorer** · **Faucet** · **API**
 
-If you already cloned without the submodule:
+| Constant | Value |
+| :--- | :--- |
+| Mainnet Chain ID | `86150` |
+| RPC port | `8545` (HTTP) · `8546` (WS) |
+| P2P port | `30303` (TCP + QUIC) |
+| Block reward | `1.0 NAK` |
+| Min validator stake | `10,000 NAK` |
 
-```bash
-git submodule update --init --recursive
-```
+---
 
-### Advance the submodule pointer to the latest upstream commit
+## Hardware requirements
 
-```bash
-git submodule update --remote --merge
-# Review changes in nakharax/, then commit the updated submodule SHA in the parent repo
-```
-
-Use `git submodule status` to see the currently pinned revision.
+| Role | CPU | RAM | Disk | Network |
+| :--- | :--- | :--- | :--- | :--- |
+| **Worker** (PC / server) | 4 cores | 8 GB | 100 GB SSD | 50 Mbps |
+| **Validator** (full node) | 8 cores | 16 GB | 500 GB NVMe | 100 Mbps, static IP |
+| **Monolith Scout** (Hailo) | Pi 5 + Hailo-8 NPU | 8 GB | 256 GB SSD | 50 Mbps |
+| **HYDRA** (Sentinel + Worker) | 12 cores | 32 GB | 1 TB NVMe | 100 Mbps |
 
 ---
 
 ## Quick start
 
-### Node operators and core developers
+### Run a node (Docker)
 
 ```bash
 git clone https://github.com/axionaxprotocol/nakharax.git
 cd nakharax/services/core
+cp .env.example .env
 docker compose -f docker-compose.dev.yml up -d --build
+
+# Verify
+curl -sX POST http://localhost:8545 \
+  -H 'Content-Type: application/json' \
+  -d '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}'
 ```
 
-### dApp and web developers
+### Join the network (bare metal)
 
 ```bash
-git clone https://github.com/axionaxprotocol/nakharax.git
-cd nakharax
-pnpm install
-pnpm --filter nakharax-os-dashboard dev
+cd nakharax/services/core
+python3 scripts/update-node.py       # install toolchains + system check
+python3 scripts/join-nakharax.py     # pick: Worker / Monolith Scout / HYDRA
 ```
 
-### SDK (npm)
+### Use the SDK
 
 ```bash
 npm install @nakharax/sdk
 ```
 
 ```typescript
-import { getBlockNumber, getBalance, isReachable, DEFAULT_NODES } from '@nakharax/sdk';
+import { getBlockNumber, isReachable, DEFAULT_NODES } from '@nakharax/sdk';
 
-const rpcUrl = DEFAULT_NODES[0].url; // https://rpc.nakharax.io (public testnet)
+const rpc = DEFAULT_NODES[0].url;
 
-if (await isReachable(rpcUrl)) {
-  const block = await getBlockNumber(rpcUrl);
+if (await isReachable(rpc)) {
+  const block = await getBlockNumber(rpc);
   console.log('Latest block:', block.ok ? block.data : block.error.message);
 }
 ```
 
 ---
 
-## Network information
+## Measured performance
 
-| Network | Chain ID | RPC | Status |
-| :--- | :---: | :--- | :---: |
-| Local development | `31337` | `http://localhost:8545` | Available |
-| Testnet | `86137` | `https://rpc.nakharax.io` | Active |
-| Mainnet | `86150` | — | In preparation |
+Real numbers from `cargo bench` — component-level, not end-to-end TPS. System throughput depends on networking, mempool, and block assembly.
 
-Public testnet endpoints: `https://rpc.nakharax.io` · explorer · api · faucet · dApp at `https://app.nakharax.io`. See the [upstream README — Network](https://github.com/axionaxprotocol/nakharax#network) for validator details and P2P troubleshooting.
+| Operation | Median |
+| :--- | :--- |
+| PoPC `generate_challenge` (1,000 samples) | ~437 µs |
+| Merkle `verify_proof` | ~10.9 ns |
+| `ed25519_verify` | ~35.6 µs (~28k/core/s) |
+| `blake2s_256` hash | ~129 ns |
+
+<sub>Block time: **5 seconds** (`configs/protocol.mainnet.yaml`). Test suite: **~360 tests passing** across 19 Rust crates + Python DeAI.</sub>
 
 ---
 
@@ -182,66 +168,70 @@ Public testnet endpoints: `https://rpc.nakharax.io` · explorer · api · faucet
 
 | Phase | Focus | Status |
 | :--- | :--- | :---: |
-| **Phase 1: Foundation** | Core blockchain (Rust + PoPC), Smart contracts (WASM), TypeScript SDK, Universe architecture | ✅ **100%** |
-| **Phase 2: Optimization** | UI/UX enhancements, Production deployment, DevOps automation, Security audits, throughput testing | ✅ **100%** |
-| **Phase 3: Launch Prep** | Axionax → nakharax.io rebrand, public testnet validators (EU + AU), faucet & explorer, validator documentation | 🔄 **In Progress** |
-| **Phase 4: Mainnet** | Testnet validation, Genesis ceremony, Token distribution (NAK), Mainnet Launch | 🎯 **Q2 2026** |
+| **1 — Foundation** | Rust blockchain + PoPC, WASM contracts, TypeScript SDK, monorepo | **Done** |
+| **2 — Hardening** | Security audits, DevOps, production deployment, UI/UX | **Done** |
+| **3 — Launch prep** | Rebrand (Axionax → nakharax.io), public testnet (EU + AU validators), faucet, explorer | **In progress** |
+| **4 — Mainnet** | Genesis ceremony, NAK token distribution, mainnet launch | **Planned** |
 
 ---
 
-## Organization activity
+## Rebrand status
 
-<div align="center">
+The project was renamed **Axionax Protocol → nakharax.io** in June 2026. In-repo rename is complete and verified (all workspace tests green).
 
-[![GitHub organization overview](https://github-readme-stats.vercel.app/api?username=axionaxprotocol&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=29F06A&icon_color=FF7A1A&text_color=FFFFFF)](https://github.com/axionaxprotocol)
+| | Before | After |
+| :--- | :--- | :--- |
+| Name | Axionax Protocol | nakharax.io |
+| Token | AXX | NAK |
+| Domain | axionax.org | nakharax.io |
+| Packages | `@axionax/sdk` | `@nakharax/sdk` |
+| Env vars | `AXIONAX_*` | `NAKHARAX_*` |
 
-</div>
+<sub>Full migration runbook: [`docs/REBRAND_MIGRATION.md`](https://github.com/axionaxprotocol/nakharax/blob/main/docs/REBRAND_MIGRATION.md)</sub>
 
-*Widget by [github-readme-stats](https://github.com/anuraghazra/github-readme-stats); figures are indicative.*
+---
+
+## Repository structure
+
+This repository (`axionaxprotocol/axionaxprotocol`) is the **GitHub organization profile** — overview and navigation only. A [Git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules) pins a snapshot of the upstream monorepo:
+
+```bash
+# Clone with submodule
+git clone --recurse-submodules https://github.com/axionaxprotocol/axionaxprotocol.git
+
+# Or init after clone
+git submodule update --init --recursive
+
+# Advance pointer to latest upstream
+git submodule update --remote --merge
+```
+
+All development happens upstream at [**axionaxprotocol/nakharax**](https://github.com/axionaxprotocol/nakharax).
 
 ---
 
 ## Contributing
 
-We welcome contributions: bug reports, documentation, and code improvements.
-
-1. Fork the [upstream repository](https://github.com/axionaxprotocol/nakharax).
-2. Create a branch (`git switch -c feature/your-change`).
-3. Commit with clear messages (e.g. `feat:`, `fix:`, `docs:`).
-4. Push and open a pull request.
-
-Guidelines and detailed processes are published on **[nakharax.io](https://nakharax.io)**.
+1. Fork [axionaxprotocol/nakharax](https://github.com/axionaxprotocol/nakharax)
+2. Pick the right sub-tree: `apps/` for UI, `services/core/` for chain/AI
+3. Match existing style — `cargo clippy` and `pnpm lint` must be clean
+4. Commit: `<type>(<scope>): <description>` — see [CONTRIBUTING.md](https://github.com/axionaxprotocol/nakharax/blob/main/docs/CONTRIBUTING.md)
+5. Open a pull request
 
 ---
 
 ## License
 
-Dual-licensed under **AGPL-3.0** (default) or **MIT** for explicit downstream agreements:
-
-- **This Repository:** MIT. See [LICENSE](LICENSE).
-- **Upstream (`nakharax`):** AGPL-3.0 by default; MIT for explicit downstream agreements. See [License in each sub-tree](https://github.com/axionaxprotocol/nakharax#license).
+- **This repository:** MIT — see [LICENSE](LICENSE)
+- **Upstream:** AGPL-3.0 (default) or MIT for explicit downstream agreements — see each sub-tree
 
 ---
 
-## Connect and support
-
 <div align="center">
 
-[![Website](https://img.shields.io/badge/Website-nakharax.io-29F06A?style=for-the-badge)](https://nakharax.io)
-[![Documentation](https://img.shields.io/badge/Documentation-nakharax.io-29F06A?style=for-the-badge)](https://nakharax.io)
-[![nakharax](https://img.shields.io/badge/nakharax-GitHub-111318?style=for-the-badge&logo=rust&logoColor=white)](https://github.com/axionaxprotocol/nakharax)
+[![Website](https://img.shields.io/badge/nakharax.io-29F06A?style=for-the-badge&logo=googlechrome&logoColor=white)](https://nakharax.io)
+[![GitHub](https://img.shields.io/badge/Source-111318?style=for-the-badge&logo=github&logoColor=white)](https://github.com/axionaxprotocol/nakharax)
 
-**Community** — Official Discord, X (Twitter), and Telegram links will be listed on **[nakharax.io](https://nakharax.io)** when they go live *(planned Q2 2026)*.
-
-</div>
-
-<br>
-
-<div align="center">
-
-**nakharax.io**
-*Last updated: July 4, 2026*
-
-![Contribution grid animation](https://raw.githubusercontent.com/axionaxprotocol/axionaxprotocol/output/github-contribution-grid-snake-dark.svg)
+<sub>Last updated: July 2026</sub>
 
 </div>
