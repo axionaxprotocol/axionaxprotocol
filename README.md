@@ -90,8 +90,11 @@ Public endpoints: **RPC** `https://rpc.nakharax.io` · **Explorer** · **Faucet*
 | Mainnet Chain ID | `86150` |
 | RPC port | `8545` (HTTP) · `8546` (WS) |
 | P2P port | `30303` (TCP + QUIC) |
+| Health port | `8080` |
+| Metrics port | `9100` |
 | Block reward | `1.0 NAK` |
 | Min validator stake | `10,000 NAK` |
+| Finality threshold | `≥ 2/3` active validators |
 
 ---
 
@@ -157,10 +160,12 @@ Real numbers from `cargo bench` — component-level, not end-to-end TPS. System 
 | :--- | :--- |
 | PoPC `generate_challenge` (1,000 samples) | ~437 µs |
 | Merkle `verify_proof` | ~10.9 ns |
+| `ed25519_sign` | ~19.9 µs |
 | `ed25519_verify` | ~35.6 µs (~28k/core/s) |
+| `sha3_256` hash | ~408 ns |
 | `blake2s_256` hash | ~129 ns |
 
-<sub>Block time: **5 seconds** (`configs/protocol.mainnet.yaml`). Test suite: **~360 tests passing** across 19 Rust crates + Python DeAI.</sub>
+<sub>Block time: **5 seconds** (`configs/protocol.mainnet.yaml`). Test suite: **~360 Rust tests** passing across 19 crates (0 failed, 1 ignored) + **30 Python DeAI** tests. Honest single-core ceiling: **~28k ed25519 verifies/core/s** — the defensible number to cite, not an unmeasured TPS figure.</sub>
 
 ---
 
@@ -232,6 +237,6 @@ All development happens upstream at [**axionaxprotocol/nakharax**](https://githu
 [![Website](https://img.shields.io/badge/nakharax.io-29F06A?style=for-the-badge&logo=googlechrome&logoColor=white)](https://nakharax.io)
 [![GitHub](https://img.shields.io/badge/Source-111318?style=for-the-badge&logo=github&logoColor=white)](https://github.com/axionaxprotocol/nakharax)
 
-<sub>Last updated: July 2026</sub>
+<sub>Last updated: 7 July 2026 · synced with upstream <a href="https://github.com/axionaxprotocol/nakharax/blob/main/docs/REALITY_MAP.md">REALITY_MAP</a></sub>
 
 </div>
